@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>프로젝트 예제 : index 메인 페이지</title> 
+		<link rel="stylesheet" type="text/css" href="css/common.css" >
+		<link rel="stylesheet" type="text/css" href="css/index.css" >
+		<link rel="stylesheet" type="text/css" href="css/menu.css" >
 		<script src="js/jquery-3.6.0.min.js"></script>	
 		<script type="text/javascript">
 		
@@ -14,33 +17,31 @@
         		<div id="headerBox">
 	            	<div class="top-channel-links">
    						 <ul class="list-select">
-					        <li class="init"></li>
-					        <li><a></a></li>
-					        <li><a></a></li>
+					        <li class="init"><a href="#">Store</a></li>
+					        <li class="hidden-list"><a href="#">Main</a></li>
 					    </ul>
 					</div>
 					<div id="topMenuBox">
 						<ul id="top-list">
-							<li>
-								<ul id="country-select" class="list-select">
-									<li class="init">한국</li>								
-									<li>영국</li>
-									<li>프랑스</li>
-								</ul>
-							</li>
-							<li>마이페이지</li>
-							<li>장바구니</li>
+							<li id="kor" ><a href="#" ><img class="country" src="image/Korea.png"></a></li>								
+							<li><a href="#" ><img src="image/myPage.png"></li>
+							<li><a href="#" ><img src="image/shopping_list.png"></li>
 						</ul>
 					</div>
 				</div>
             </header>
             <nav>            
             	<div id="mainMenuBox">
+            	  <ul>
+            	 	 <li><a href="#" ><img src="image/chukShinsa.png"></a></li>
             		<li id="mainMenuShowAll"><a>전체메뉴</a></li>
-            		<li><a>구단별</a></li>
-            		<li><a>용품별</a></li>
-            		<li><a>세일품목</a></li>
-            		<li><a>고객센터/FAQ </a></li>
+            		<li><a href="#" >구단별</a></li>
+            		<li><a href="#" >용품별</a></li>
+            		<li><a href="#" >세일품목</a></li>
+            		<li><a href="#" >고객센터/FAQ </a></li>
+            		<li><input type="text" value="검색창"></li>
+            		<li><a href="#" ><input type="button" value="확인"></a></li>
+            	  </ul>
             	</div>
                 <div id="subMenuBox">
                 	<div class="subMenuItem" id="ctg_club">
@@ -78,9 +79,11 @@
                 </div>                
             </nav>             
             <section>
-            	<article  id="searchbar"> <!-- 검색창 -->   
+            	<article  id="searchBar"> 
+            	<input id="searchBarInput" type="text" value="검색창"> <!-- 검색창 -->   
                 </article> 
             	<article  id="slideShow"> <!-- 슬라이드 쇼 -->   
+            	<a href="#" ><img class="slideShowimg" src="image/liverPool.jpg"></a>
                 </article> 
                 <article id="content1"> <!-- 탭메뉴 -->             
                 </article>
