@@ -1,1 +1,23 @@
 @charset "UTF-8";
+
+/* index.css */
+
+/*************** Header *******************/
+
+#headerBox {
+	height:60px;
+	line-height:60px; /* 줄간격 - 수직으로 가운데 정렬 효과 */
+	padding:0;
+	background-color:#dc0714;
+	font-size:20pt;
+}
+
+#headerBox a{
+	 color:white;
+}
+
+.top-channel-links {
+	float:left;
+	height:60px;
+	line-height:60px;
+}
