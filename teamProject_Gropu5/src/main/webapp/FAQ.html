@@ -9,7 +9,8 @@
 <link rel="stylesheet" type="text/css" href="css/index.css">
 <link rel="stylesheet" type="text/css" href="css/menu.css">
 
-<script src="jquery-3.6.0.min.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/FAQ.js"></script>
 
 <script type="text/javascript">
 	
@@ -37,13 +38,6 @@
 			</div>
 		</div>
 	</header>
-
-
-
-	<nav>
-		<div id="mainMenuBox"></div>
-		<div id="subMenuBox"></div>
-	</nav>
 
 
 	<section>
@@ -100,28 +94,29 @@
 
 
 	<!-- 메인 영역 -->
-	<section>
+	<section class="section">
 
 
 
-		<div class="left_area" id="service">
+		<div class="left_area" id="left_area">
 			<!-- 왼쪽 메뉴 영역 -->
-			<div class="menu_left" id="serviceMenu">
-				<ul class="snb">
-					<li data-for="category" class="box">고객센터</li>
-				</ul>
+			<div class="serviceMenu" id="serviceMenu">
+				<div class="serviceMenu2" id="serviceMenu2">
+					<ul class="snb">
+						<li data-for="category" class="box">고객센터</li>
+					</ul>
 
-				<div id="leftMenu" class="tabCategory" role="tablist">
-					<nav class="navMenu">
-						<ul>
-							<li><a href="#">자주 묻는 질문들</a></li>
-							<li><a href="#">1:1 문의</a></li>
-							<li><a href="#">환불/반품 안내</a></li>
-							<li><a href="#">제품 문의</a></li>
-							<li><a href="#">입점 문의</a></li>
-						</ul>
-
-					</nav>
+					<div id="leftMenu" class="leftMenu" role="tablist">
+						<nav class="navMenu">
+							<ul>
+								<li><a href="#">자주 묻는 질문들</a></li>
+								<li><a href="#">1:1 문의</a></li>
+								<li><a href="#">환불/반품 안내</a></li>
+								<li><a href="#">제품 문의</a></li>
+								<li><a href="#">입점 문의</a></li>
+							</ul>
+						</nav>
+					</div>
 
 				</div>
 
@@ -135,7 +130,7 @@
 
 
 
-		<div class="right_area_main" id="FAQ">
+		<div class="right_area_main" id="right_area_main">
 			<!-- 오른쪽 메뉴 (메인) 영역 -->
 
 			<!-- 상단 로케이션 -->
@@ -160,11 +155,9 @@
 			<div class="faqTable" id="faqTable">
 
 				<div class="faqTableHeader" id="faqTableHeader">
-					<ul>
-						<li>목록</li>
-						<li><input type="text" value="검색창"></li>
-						<li><a href="#"><input type="button" value="확인"></a></li>
-					</ul>
+
+					목록<br> <input type="text" value="질문 검색"> <a href="#"><input
+						type="button" value="확인"></a>
 				</div>
 
 				<!-- 질문 리스트 -->
@@ -172,33 +165,91 @@
 				<div class="faqTaleList" id="faqTaleList">
 
 
-					<div id="Q1" style="visibility: visible;">
+					<div class="Q1" id="Q1" style="visibility: visible;">
 						<ul>
-							<li><a herf="#">Q1. 배송은 얼마나 걸리나요?</a></li>
+							<li><a herf="#" class='question1'>Q1. 배송은 얼마나 걸리나요?</a></li>
+
+							<li class='content1'>
+							
+							<br />
+							A1. 배송은 주말을 제외한 평일 1시 이전 건에 대해서 당일 배송을 원칙으로 합니다.<br />
+							다만 각 택배사의 사정에 따라 최대 2일 ~ 10일 가량의 기간이 소요될 수 있습니다.<br />
+							해외 직구 제품은 통관을 거치기 때문에 국내 배송보다 다소 느린 점 양해 바랍니다.
+							<br />
+							<br />
+								
+							</li>
+
 						</ul>
 					</div>
 
-					<div id="Q2" style="visibility: visible;">
+					<div class="Q2" id="Q2" style="visibility: visible;">
 						<ul>
-							<li><a herf="#">Q2. 품절 제품은 언제 입고 되나요?</a></li>
+							<li><a herf="#" class='question2'>Q2. 품절 제품은 언제 입고 되나요?</a></li>
+
+							<li class='content2'>
+							
+							<br />
+							A2. 어쩌구저쩌구어쩌구저쩌구어쩌구<br />
+							어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구<br />
+							어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구
+							<br />
+							<br />
+							
+							</li>
+
 						</ul>
 					</div>
 
-					<div id="Q3" style="visibility: visible;">
+					<div class="Q3" id="Q3" style="visibility: visible;">
 						<ul>
-							<li><a herf="#">Q3. 결제 시 오류가 발생합니다.</a></li>
+							<li><a herf="#" class='question3'>Q3. 결제 시 오류가 발생합니다.</a></li>
+
+							<li class='content3'>
+							
+							<br />
+							A3. 어쩌구저쩌구어쩌구저쩌구어쩌구<br />
+							어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구<br />
+							어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구
+							<br />
+							<br />
+								
+							</li>
 						</ul>
 					</div>
 
-					<div id="Q4" style="visibility: visible;">
+					<div class="Q4" id="Q4" style="visibility: visible;">
 						<ul>
-							<li><a herf="#">Q4. 반품 접수는 어디서 하나요?</a></li>
+							<li><a herf="#" class='question4'>Q4. 반품 접수는 어디서 하나요?</a></li>
+
+							<li class='content4'>
+							
+							<br />
+							A4. 어쩌구저쩌구어쩌구저쩌구어쩌구<br />
+							어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구<br />
+							어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구
+							<br />
+							<br />
+							
+							</li>
 						</ul>
 					</div>
 
-					<div id="Q5" style="visibility: visible;">
+					<div class="Q5" id="Q5" style="visibility: visible;">
 						<ul>
-							<li><a herf="#">Q5. 단순 변심으로 인한 환불은 불가능한가요?</a></li>
+							<li><a herf="#" class='question5'>Q5. 단순 변심으로 인한 환불은
+									불가능한가요?</a></li>
+
+							<li class='content5'>
+							
+							<br />
+							A5. 어쩌구저쩌구어쩌구저쩌구어쩌구<br />
+							어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구<br />
+							어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구
+							<br />
+							<br />
+							
+							</li>
 						</ul>
 					</div>
 
@@ -226,7 +277,7 @@
 
 
 	</section>
-	<!-- 전체 영역 끝 -->
+	<!-- 메인 영역 끝 -->
 
 
 
