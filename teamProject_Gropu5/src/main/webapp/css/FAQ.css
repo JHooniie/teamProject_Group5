@@ -121,13 +121,15 @@
 	display: flex;
 	flex-grow: 1; /* 왼쪽 비율 */
 	flex-direction: column;
+	flex-wrap: wrap;
 	height: 100%;
-	border: 1px solid green;
+	/* border: 1px solid green; */
 }
 
 .serviceMenu {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 	height: 100%;
 	width: 60%;
 	background: #dc0714;
@@ -135,27 +137,21 @@
 	padding-top: 20px; */
 }
 
-.serviceMenu2 {
+.navMenu {
 	display: flex;
 	flex-direction: column;
-	height: 100%;
-	padding: 30px;
-}
-
-.leftMenu {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	line-height: 50px;
+	flex-wrap: wrap;
+	line-height: 70px;
 }
 
 .right_area_main {
 	display: flex;
 	flex-grow: 3; /* 오른쪽 비율 */
 	flex-direction: column;
+	flex-wrap: wrap;
 	justify-content: flex-start;
 	height: 100%;
-	border: 1px solid green;
+	/* border: 1px solid green; */
 }
 
 .pagenation {
@@ -172,6 +168,7 @@
 
 .faqTableHeader {
 	display: flex;
+	flex-wrap: wrap;
 	flex-basis: 20px;
 	box-sizing: border-box;
 	width: 100%;
@@ -249,22 +246,52 @@ img {
 	cursor: pointer;
 }
 
+#question1:hover {
+	color: red;
+	cursor: pointer;
+}
+
+#question2:hover {
+	color: red;
+	cursor: pointer;
+}
+
+#question3:hover {
+	color: red;
+	cursor: pointer;
+}
+
+#question4:hover {
+	color: red;
+	cursor: pointer;
+}
+
+#question5:hover {
+	color: red;
+	cursor: pointer;
+}
+
 .content1 {
 	display: none;
+	border: 2px solid gray;
 }
 
 .content2 {
 	display: none;
+	border: 2px solid gray;
 }
 
 .content3 {
 	display: none;
+	border: 2px solid gray;
 }
 
 .content4 {
 	display: none;
+	border: 2px solid gray;
 }
 
 .content5 {
 	display: none;
+	border: 2px solid gray;
 }
