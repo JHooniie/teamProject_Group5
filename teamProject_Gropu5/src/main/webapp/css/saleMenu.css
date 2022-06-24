@@ -1,0 +1,40 @@
+@charset "EUC-KR";
+
+/*saleMecu.css*/
+
+#sale_content{
+	margin-top:20px;
+}
+
+#salePrdBox {
+	width:80%;
+	height:1200px;
+	background:white;
+	padding:40px;
+	padding-top:20px;
+	margin-top:20px;
+}
+
+#salePrdBox .product {
+	display:inline-block;	/* 옆으로 나란히 배치 */
+	width:100%;
+	margin-top:20px;
+}
+
+#salePrdBox .product div{
+	display:inline-block;	/* 옆으로 나란히 배치 */
+	width:303px;
+	height:500px;
+	border:solid 1px #cccccc;
+	margin:10px;
+}
+
+#salePrdBox .product div img {
+	width:100%;
+	height:100%;
+}
+
+#salePrdBox .product div:hover {
+	opacity:0.7;
+	border:solid 1px red; 
+}
