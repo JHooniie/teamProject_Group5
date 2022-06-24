@@ -21,9 +21,17 @@
 	background-color: white;
 }
 
+a {
+	text-decoration: none;
+}
+
 #serviceMenu {
+	display: flex;
+	flex-direction: column;
 	background: #dc0714;
 	width: 80%;
+	padding: 20px 10px;
+	background: #dc0714;
 }
 
 #navMenu {
@@ -73,6 +81,7 @@
 	padding: 20px;
 	text-align: left;
 	line-height: 30px;
+	font-size: 13px;
 }
 
 /********** 챗봇 ************/
@@ -87,12 +96,11 @@
 
 #chatbot_chat {
 	position: fixed;
-	bottom: 4%;
-	right: 150px;
+	bottom: 5%;
+	right: 160px;
 	width: 30%;
 	height: 150px;
 	width: 150px;
-	padding: 10px;
 }
 
 .chatbot_chat {
@@ -164,29 +172,29 @@ img {
 .content1 {
 	display: none;
 	border: 2px solid gray;
-	padding: 10px;
+	padding: 10px 10px;
 }
 
 .content2 {
 	display: none;
 	border: 2px solid gray;
-	padding: 10px;
+	padding: 10px 10px;
 }
 
 .content3 {
 	display: none;
 	border: 2px solid gray;
-	padding: 10px;
+	padding: 10px 10px;
 }
 
 .content4 {
 	display: none;
 	border: 2px solid gray;
-	padding: 10px;
+	padding: 10px 10px;
 }
 
 .content5 {
 	display: none;
 	border: 2px solid gray;
-	padding: 10px;
+	padding: 10px 10px;
 }
