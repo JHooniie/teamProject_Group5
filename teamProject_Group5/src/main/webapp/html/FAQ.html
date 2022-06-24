@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>FAQ 페이지</title>
-		<link rel="stylesheet" type="text/css" href="../css/FAQPage/FAQ.css">
-		<link rel="stylesheet" type="text/css" href="../css/common.css">
-		<link rel="stylesheet" type="text/css" href="../css/index.css">
-		<link rel="stylesheet" type="text/css" href="../css/menu.css">
-		<script src="../js/jquery-3.6.0.min.js"></script>
-		<script src="../js/FAQPage/FAQ.js"></script>
-		<script type="text/javascript"></script>
+<head>
+<meta charset="UTF-8">
+<title>FAQ 페이지</title>
 
-	</head>
-	
-	<body>
+<link rel="stylesheet" type="text/css" href="../css/FAQPage/FAQ.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/index.css">
+<link rel="stylesheet" type="text/css" href="../css/menu.css">
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/FAQPage/FAQ.js"></script>
+<script type="text/javascript"></script>
+
+</head>
+
+<body>
+
+	<div id="wrap">
+
 		<header>
 			<div id="headerBox">
 				<div class="top-channel-links">
@@ -23,21 +27,22 @@
 					</ul>
 				</div>
 				<div id="topMenuBox">
-							<ul id="top-list">
-								<li id="kor" ><a href="#" ><img class="country" src="../image/country/Korea.png"></a></li>								
-								<li><a href="#"><img src="../image/UIIcon/myPage.png"></li>
-								<li><a href="#"><img src="../image/UIIcon/shopping_list.png"></li>
-							</ul>
-						</div>
-					</div>
-	            </header>
-	
-	
+					<ul id="top-list">
+						<li id="kor"><a href="#"><img class="country"
+								src="image/Korea.png"></a></li>
+						<li><a href="#"><img src="image/myPage.png"></li>
+						<li><a href="#"><img src="image/shopping_list.png"></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+
 		<section>
-	
+
 			<div id="mainMenuBox">
 				<ul>
-					<li><a href="#"><img src="../image/pageLogo/chukShinsa.png"></a></li>
+					<li><a href="#"><img src="image/chukShinsa.png"></a></li>
 					<li id="mainMenuShowAll"><a>전체메뉴</a></li>
 					<li><a href="#">구단별</a></li>
 					<li><a href="#">용품별</a></li>
@@ -56,7 +61,7 @@
 						<li><a href="#">subMenuItem1-4</a></li>
 					</ul>
 				</div>
-				<div class="subMenuItem" id="ctg_equipment">
+				<div class="subMenuItem" id="ctg_item">
 					<ul>
 						<li><a href="#">subMenuItem2-1</a></li>
 						<li><a href="#">subMenuItem2-2</a></li>
@@ -81,173 +86,197 @@
 					</ul>
 				</div>
 			</div>
-	
+
 		</section>
-	
-	
-	
+
+
+
 		<!-- 메인 영역 -->
-		<section class="section">
-	
-	
-	
+		<section class="section" id="section">
+
+
+
 			<div class="left_area" id="left_area">
 				<!-- 왼쪽 메뉴 영역 -->
-	
+
 				<div class="serviceMenu" id="serviceMenu">
-	
-	
+
+
 					<nav class="navMenu" id="navMenu">
-						<h2>고객센터</h2>
+						<h2>축신사 CS</h2>
+						<div id="navMenu1">자주 묻는 질문들</div>
+						<div id="navMenu2">1:1 문의</div>
 						<ul>
-							<li><a href="#">자주 묻는 질문들</a></li>
-							<li><a href="#">1:1 문의</a></li>
-							<ul>
-								<li>이메일 문의</li>
-								<li>상담사 문의</li>
-							</ul>
-							<li><a href="#">환불/반품 안내</a></li>
-							<li><a href="#">제품 문의</a></li>
-							<li><a href="#">입점 문의</a></li>
+							<li>- 이메일 문의</li>
+							<li>- 상담사 문의</li>
 						</ul>
+						<div id="navMenu3">환불/반품 안내</div>
+						<ul>
+							<li>- 환불 시 주의사항</li>
+							<li>- 반품 기준 안내</li>
+						</ul>
+						<div id="navMenu4">제품 문의</div>
+						<div id="navMenu5">입점 문의</div>
 					</nav>
-	
+
+					<img src="image/tell.png">
+
 				</div>
-	
-	
+
+
 			</div>
 			<!-- 왼쪽 메뉴 영역 끝 -->
-	
-	
-	
+
+
+
 			<div class="right_area_main" id="right_area_main">
 				<!-- 오른쪽 메뉴 (메인) 영역 -->
-				
+
 				<!-- 상단 로케이션 -->
 				<div class="pagenation" id="pagenation">
-	
+
 					<div class="navSub">
 						<a href="#">축신사 스토어</a> <span class="iconEntity"> > </span> <span>고객센터</span>
 					</div>
-	
+
 				</div>
 				<!-- 상단 로케이션 끝 -->
 				<!-- 타이틀 -->
 				<div class="pageBox" id="pageBox">
-					<h1 class="title">고객센터</h1>
+					<h1 class="title">CS Center</h1>
 				</div>
 				<!-- 타이틀 끝 -->
-	
+
 				<div class="faqTitle" id="faqTitle">
-					<h2 class="faqTitle_title">FAQ / 자주 묻는 질문들</h2>
-	
+					<h3 class="faqTitle_title">FAQ / 자주 묻는 질문들</h3>
+
 				</div>
-	
+
 				<div class="faqTable" id="faqTable">
-	
+
 					<div class="faqTableHeader" id="faqTableHeader">
-	
-						목록<br> <input type="text" value="질문 검색"> <a href="#"><input
-							type="button" value="확인"></a>
+						목록 <input type="text" value="무엇을 도와드릴까요?"> <a href="#"><input
+							type="button" value="검색"></a>
 					</div>
-	
+
 					<!-- 질문 리스트 -->
-	
+
 					<div class="faqTaleList" id="faqTaleList">
-	
-	
-						<div class="Q1" id="Q1" style="visibility: visible;">
+
+
+						<div class="Q1" id="Q1">
 							<ul>
-								<li><a herf="#" class='question1' id='question1'>Q1. 배송은
-										얼마나 걸리나요?</a></li>
-	
-								<li class='content1'><br /> A1. 배송은 주말을 제외한 평일 1시 이전 건에 대해서
-									당일 배송을 원칙으로 합니다.<br /> 다만 각 택배사의 사정에 따라 최대 2일 ~ 10일 가량의 기간이 소요될
-									수 있습니다.<br /> 해외 직구 제품은 통관을 거치기 때문에 국내 배송보다 다소 느린 점 양해 바랍니다. <br />
-									<br /></li>
-	
+								<li><a herf="#" class='question1' id='question1'>Q1.
+										배송은 얼마나 걸리나요?</a></li>
+
+								<li class='content1'><br /> A1. 배송은 주말을 제외한 평일 1시 이전 건에
+									대해서 당일 배송을 원칙으로 합니다.<br /> 다만 각 택배사의 사정에 따라 최대 2일 ~ 10일 가량의
+									기간이 소요될 수 있습니다.<br /> 해외 직구 제품은 통관을 거치기 때문에 국내 배송보다 다소 느린 점 양해
+									바랍니다. <br /> <br /></li>
+
 							</ul>
 						</div>
-	
-						<div class="Q2" id="Q2" style="visibility: visible;">
+
+						<div class="Q2" id="Q2">
 							<ul>
 								<li><a herf="#" class='question2' id='question2'>Q2. 품절
 										제품은 언제 입고 되나요?</a></li>
-	
+
 								<li class='content2'><br /> A2.
 									어쩌구저쩌구어쩌구저쩌구어쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구<br />
 									어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구<br />
 									어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구 <br /> <br /></li>
-	
 							</ul>
 						</div>
-	
-						<div class="Q3" id="Q3" style="visibility: visible;">
+
+						<div class="Q3" id="Q3">
 							<ul>
 								<li><a herf="#" class='question3' id='question3'>Q3. 결제
 										시 오류가 발생합니다.</a></li>
-	
+
 								<li class='content3'><br /> A3.
 									어쩌구저쩌구어쩌구저쩌구어쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구<br />
 									어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구<br />
 									어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구 <br /> <br /></li>
 							</ul>
 						</div>
-	
-						<div class="Q4" id="Q4" style="visibility: visible;">
+
+						<div class="Q4" id="Q4">
 							<ul>
 								<li><a herf="#" class='question4' id='question4'>Q4. 반품
 										접수는 어디서 하나요?</a></li>
-	
+
 								<li class='content4'><br /> A4.
 									어쩌구저쩌구어쩌구저쩌구어쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구<br />
 									어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구<br />
 									어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구 <br /> <br /></li>
 							</ul>
 						</div>
-	
-						<div class="Q5" id="Q5" style="visibility: visible;">
+
+						<div class="Q5" id="Q5">
 							<ul>
 								<li><a herf="#" class='question5' id='question5'>Q5. 단순
 										변심으로 인한 환불은 불가능한가요?</a></li>
-	
+
 								<li class='content5'><br /> A5.
 									어쩌구저쩌구어쩌구저쩌구어쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구<br />
 									어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구<br />
 									어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구 <br /> <br /></li>
 							</ul>
 						</div>
-	
+
 					</div>
-	
+
 					<!-- 질문 리스트 끝 -->
-	
-	
-	
+
 				</div>
+
+				<div id="notice">
+					<h4>
+						Notice <span>공지사항</span>
+					</h4>
+					<ul>
+						<li>- 첼시FC 레플리카 불량품 교환 안내</li>
+						<li>- 손흥민 싸인 유니폼 이벤트 관련 공지사항</li>
+						<li>- 삼성카드 결제 시 5% 적립 관련 안내</li>
+						<li>- 제휴 카드 목록 안내</li>
+						<li>- 개인정보처리방침 사전 안내(6/27~)</li>
+
+					</ul>
+
+
+				</div>
+
+
 			</div>
 			<!-- 오른쪽 메뉴 (메인) 영역 끝 -->
-	
-	
-	
-			<!-- 챗봇 -->
-			<div class="chatbot" id="chatbot">
-				<img src="../image/UIIcon/chatbot.png" id="chatbotimg">
+
+
+			<div class="chatbot_box" id="charbot_box">
+
+				<!-- 챗봇 -->
+				<div class="chatbot" id="chatbot">
+					<img src="image/chatbot.png" id="chatbotimg">
+				</div>
+
+				<div class="chatbot_chat" id="chatbot_chat">
+					<img src="image/chatbot_chat.png" id="chatbot_chatimg">
+				</div>
+
 			</div>
-	
-	
-	
-	
+
+
+
 		</section>
 		<!-- 메인 영역 끝 -->
-	
-	
-	
+
+
+
 		<footer>
 			<div id="footerBox">
-	
+
 				<div id="bottomMenuBox">
-	
+
 					<ul id="bottomMenuItem">
 						<li><a href="#">회사소개</a></li>
 						<li><a href="#">이용약관</a></li>
@@ -256,13 +285,14 @@
 						<li><a href="#">보안센터</a></li>
 						<li><a href="#">채용정보</a></li>
 					</ul>
-	
+
 				</div>
-	
+
 				<div id="companyInfo"></div>
 				<div id="moveToTopBox"></div>
-	
+
 			</div>
 		</footer>
-	</body>
+	</div>
+</body>
 </html>
