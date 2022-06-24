@@ -32,6 +32,39 @@ ul {
 	width: 100%;
 	height: 30px;
 }
+/********** LANGUAGE WINDOW ************/
+#langWinWrap {
+	display:block;
+	width: 300px;
+	height: 550px;
+	background-color: #ffffff;
+	text-align:center;
+	padding:50px;
+}
+#nationSelect {
+	display:block;
+	width: 150px;
+	height: 30px;
+	text-align:center;
+	
+	
+}
+#nationSelect ul li{
+	border:solid #cccccc 2px;
+}
+#languageBox {
+	display:block;
+	width: 150px;
+	height: 300px;
+	background-color: #ffffff;
+	text-align:center;
+	padding-bottom: 0;
+	position: absolute;
+	visibility: hidden;
+}
+#languageBox ul li {
+	border:solid #cccccc 1px;
+}
 
 /********** MAIN MENU ************/
 
