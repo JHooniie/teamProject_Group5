@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+
+#content2 {
+	width:1280px;
+	height:70px;
+	line-height:70px;
+	background-color:#ffffff;   /* white*/
+	z-index:20;  /* 스크롤 시 위 오도록 */
+	border-top:solid #cccccc 1px;
+	border-bottom:solid #cccccc 1px;
+}
