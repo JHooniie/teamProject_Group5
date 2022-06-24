@@ -106,3 +106,25 @@ $(document).ready(function() {
 	});
 
 });
+
+
+$(document).ready(function() {
+
+	const chatbot = document.querySelector('.chatbot');
+	const chatbotChat = document.querySelector('.chatbot_chat');
+
+	let isHidden = true;
+
+	chatbot.addEventListener('click', () => {
+		if (isHidden) {
+			// 안보일 때
+			isHidden = false;
+			chatbotChat.style.display = 'block';
+		} else {
+			// 보일 때
+			isHidden = true;
+			chatbotChat.style.display = 'none';
+		}
+	});
+
+});
