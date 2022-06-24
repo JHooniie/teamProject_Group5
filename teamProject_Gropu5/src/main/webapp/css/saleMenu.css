@@ -2,12 +2,17 @@
 
 /*saleMecu.css*/
 
+#sale_content{
+	margin-top:20px;
+}
+
 #salePrdBox {
 	width:80%;
 	height:1200px;
 	background:white;
 	padding:40px;
 	padding-top:20px;
+	margin-top:20px;
 }
 
 #salePrdBox .product {
