@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/* tabMenu.css */
+
+/*********** TAB MENU ************/
+
+#best-prd_content{
+	position:relative;
+	box-sizing:border-box;
+}
+
+#tabMenuBox {
+	position:relative;
+	width:100%;
+	height:690px;
+	background:white;
+	text-align:center;
+}
+
+.prdTitle{
+	font-size:40px;
+	font-family:Fantasy;
+	font-weight:bold;
+	
+}
+
+#tabMenu ul { 
+	position:relative;
+	height:30px;
+	padding:0;
+	left:5%;
+	}
+
+#tabMenu ul li {
+	float:left;
+	list-style:none;
+	width:30%;
+	padding:0;
+	height:30px;
+	line-height:30px;
+	overflow:hidden;
+	margin-top:0px;
+}
+
+
+#tabMenu img:hover { cursor:pointer;}
+
+/* �� ���� ǥ�� : js ���Ͽ��� addClass()���� ����ϱ� ���� Ŭ���� ������ */
+.selectedItem img {margin-top:-30px;}
+
+/*********** TAB CONTENT ********************/
+#best-prd_content{
+	margin:0 0 10px 0;
+	box-sizing:border-box;
+}
+#tabContent {
+	position:relative;
+	width:100%;
+	height:550px;
+	border-top:solid 1px #cccccc;
+	border-bottom:solid 1px #cccccc;
+	padding-bottom:20px;
+	margin-top:0;
+	margin-bottom:20px;
+	box-sizing:border-box;
+}
+
+/* content�� ��� div ���� */
+
+#tabContent div {
+	position:relative;
+	display:none;
+	padding:0;
+	box-sizing:border-box;
+
+}
+
+
+
+#tabContent .clubTabContent { 
+	position:relative;
+	display:inline-block;
+	margin-bottom:20px;
+	box-sizing:border-box;
+}	
+
+.clubTabContent a img {
+	width:90%;
+	border:solid 1px #cccccc;
+}
+
+#tabContent .itemTabContent { 
+	position:relative;
+	margin-bottom:20px;
+	box-sizing:border-box;
+}	
+
+.itemTabContent a img {
+	width:90%;
+	border:solid 1px #cccccc;
+}
+
+#tabContent .saleTabContent { 
+	position:relative;
+	margin-bottom:20px;
+	box-sizing:border-box;
+}	
+
+.saleTabContent a img {
+	width:90%;
+	border:solid 1px #cccccc;
+}

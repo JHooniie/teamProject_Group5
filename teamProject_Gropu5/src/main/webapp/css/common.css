@@ -1,13 +1,13 @@
-@charset "EUC-KR";
+@charset "UTF-8";
 
 /* common.css */
-/* ¸ðµç ÆäÀÌÁö¿¡ °øÅëÀûÀ¸·Î Àû¿ë */
+/* ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
 
 * {
 	margin: 0 auto;
 }
 
-/* ¸ðµç ÄÁÅÙÃ÷¸¦ Æ÷ÇÔÇÏ´Â  box */
+/* ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½  box */
 #wrap {
 	width: 1280px;
 	background-color: #ffffff;
@@ -15,21 +15,19 @@
 	position: relative;
 }
 
-/* ¸ðµç <img> Å×±× Å×µÎ¸® ¾øÀ½ */
+/* ï¿½ï¿½ï¿½ <img> ï¿½×±ï¿½ ï¿½×µÎ¸ï¿½ ï¿½ï¿½ï¿½ï¿½ */
 img {
 	border: 0;
 	margin: 0;
 }
 
-.hidden-list {
-	z-index:10; 
-	visibility:hidden
-}
-
 #footerBox div{
 	background-color:#777777;
-	border:solid 1px #999999;
 	margin-top:10px;
 	padding:20px;
 	margin:0;
+}
+
+#companySponser div{
+	padding:0;
 }

@@ -5,21 +5,17 @@
 /*************** Header *******************/
 
 #headerBox {
-	height:60px;
-	line-height:60px; /* 줄간격 - 수직으로 가운데 정렬 효과 */
+	height:70px;
+	line-height:70px; /* 줄간격 - 수직으로 가운데 정렬 효과 */
 	padding:0;
 	background-color:#dc0714;
 	font-size:20pt;
+
 }
 
 #headerBox a{
 	 color:white;
-}
 
-.top-channel-links {
-	float:left;
-	height:60px;
-	line-height:60px;
 }
 
 /************* 세일 메뉴 **********/
@@ -42,4 +38,4 @@
 .mainMenuShadow {
 	box-shadow:0 3px 5px 0px gray;
 	/* offset-x | offset-y | blur-radius | spread-radius | color */
-
+}
