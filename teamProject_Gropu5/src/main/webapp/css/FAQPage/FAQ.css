@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+#section {
+	background-color: white;
+	width: 1280px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#left_area {
+	flex-basis: 30%; /* 왼쪽 비율 */
+	text-align: center;
+}
+
+#right_area_main {
+	flex-basis: 70%; /* 오른쪽 비율 */
+	text-align: left;
+	background-color: white;
+}
+
+a {
+	text-decoration: none;
+}
+
+#serviceMenu {
+	display: flex;
+	flex-direction: column;
+	background: #dc0714;
+	width: 80%;
+	padding: 20px 10px;
+	background: #dc0714;
+}
+
+#navMenu {
+	line-height: 70px;
+}
+
+#pagenation {
+	/* 	border: 1px solid green; */
+	background: #f3f3f3;
+	padding: 10px;
+}
+
+#pageBox {
+	/* 	border: 1px solid red; */
+	padding: 10px;
+}
+
+#faqTitle {
+	/* 	border: 1px solid blue; */
+	padding: 20px;
+}
+
+#faqTable {
+	/* 	border: 1px solid skyblue; */
+	padding: 20px;
+}
+
+#faqTableHeader {
+	box-sizing: border-box;
+	width: 100%;
+	height: 55px;
+	padding: 10px;
+	border-top: 3px solid gray;
+	border-bottom: 3px solid gray;
+	border-top: 3px solid gray;
+}
+
+#faqTaleList {
+	box-sizing: border-box;
+	line-height: 70px;
+	cursor: pointer;
+	align-items: center;
+}
+
+#notice {
+	border-top: 3px solid #f3f3f3;
+	padding: 20px;
+	text-align: left;
+	line-height: 30px;
+	font-size: 13px;
+}
+
+/********** 챗봇 ************/
+#chatbot {
+	position: fixed;
+	bottom: 5%;
+	right: 10px;
+	width: 30%;
+	height: 150px;
+	width: 150px;
+}
+
+#chatbot_chat {
+	position: fixed;
+	bottom: 5%;
+	right: 160px;
+	width: 30%;
+	height: 150px;
+	width: 150px;
+}
+
+.chatbot_chat {
+	display: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/********** 호버 ************/
+#chatbot:hover {
+	opacity: 0.3;
+	cursor: pointer;
+}
+
+#navMenu1:hover {
+	color: #f3f3f3;
+	cursor: pointer;
+}
+
+#navMenu2:hover {
+	color: #f3f3f3;
+	cursor: pointer;
+}
+
+#navMenu3:hover {
+	color: #f3f3f3;
+	cursor: pointer;
+}
+
+#navMenu4:hover {
+	color: #f3f3f3;
+	cursor: pointer;
+}
+
+#navMenu5:hover {
+	color: #f3f3f3;
+	cursor: pointer;
+}
+
+#question1:hover {
+	color: red;
+	cursor: pointer;
+}
+
+#question2:hover {
+	color: red;
+	cursor: pointer;
+}
+
+#question3:hover {
+	color: red;
+	cursor: pointer;
+}
+
+#question4:hover {
+	color: red;
+	cursor: pointer;
+}
+
+#question5:hover {
+	color: red;
+	cursor: pointer;
+}
+
+/********** 답변 hidden ************/
+.content1 {
+	display: none;
+	border: 2px solid gray;
+	padding: 10px 10px;
+}
+
+.content2 {
+	display: none;
+	border: 2px solid gray;
+	padding: 10px 10px;
+}
+
+.content3 {
+	display: none;
+	border: 2px solid gray;
+	padding: 10px 10px;
+}
+
+.content4 {
+	display: none;
+	border: 2px solid gray;
+	padding: 10px 10px;
+}
+
+.content5 {
+	display: none;
+	border: 2px solid gray;
+	padding: 10px 10px;
+}

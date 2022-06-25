@@ -1,0 +1,65 @@
+@charset "EUC-KR";
+
+/* tabMenu.css */
+
+/*********** TAB MENU ************/
+
+
+
+.prd{
+	border:solid 1px #eeeeee;
+	margin-top:50px;
+	width:1100px;
+	margin-bottom:20%;
+	border-collapse : collapse;
+	
+}
+
+.prd td{
+	height: 250px;
+	border-bottom:solid 1px #eeeeee;
+}
+
+.prd .prdName{
+	font-size:20px;
+	font-weight: bold;
+	text-align:left;
+	padding-top:20px;
+	padding-left:30px;
+}
+
+.prd .prdInfo{
+	font-weight:100;
+	font-size:16px;
+	float:left;
+	padding: 40px 0px 0px 00px;
+	
+}
+
+.prd .prdPrice{
+	font-size:20px;
+	font-weight: bold;
+	padding-top:40px;
+	text-align:right;
+	padding-right:100px;
+}
+.prd a {
+	
+	color:#333333;
+	text-decoration:none;;
+}
+
+.prd .prdName:hover {
+	background-color:#ffffff; 
+	text-decoration:underline;
+	color:black;
+}
+
+.prdImg{
+	height:200px;
+	 width:200px;
+	 float:left;
+}
+
+
+
