@@ -35,7 +35,9 @@
 
 #ukMap{
 	position:absolute;
+	cursor:pointer;
 	left:5px;
+	z-index:10;
 	top:187px;
 	opacity:0;
 }
@@ -46,9 +48,18 @@
 
 #itaMap{
 	position:absolute;
+	cursor:pointer;
 	bottom:40px;
 	left:450px;
 	opacity:0;
+}
+
+#clubMap a {
+	opacity:0;
+}
+
+#clubMap a:hover {
+	opacity:1;
 }
 
 #itaMap:hover {

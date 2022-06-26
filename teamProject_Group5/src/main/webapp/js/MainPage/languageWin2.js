@@ -5,14 +5,14 @@
    $(document).ready(function() {
 	
 	
-	$('#kor').on('click',function(){	
+	$('#uk').on('click',function(){	
 		$('#selectcon').slideToggle()
 			
 	});
 	
-	$('#uk').on('click',function hrefMove(){
+	$('#kor').on('click',function hrefMove(){
 					
-					 location.href = "html/uk-index.html";
+					 location.href = "../index.html";
 					
 				
 	});
