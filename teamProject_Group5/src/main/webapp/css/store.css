@@ -1,0 +1,50 @@
+.navbar{
+    height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+.hero-header{
+    height: 600px;
+    background-image: url("../image/clubImage/liverPool.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 40pt;
+    }
+
+
+.product-list{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.products h3{
+    font-size: 24px;
+    color: #545454;
+    margin-top:60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.product{
+    display: block;
+    width: 225px;
+    text-align: center;
+    text-decoration:none;
+    color: black;
+    float:left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 140px;
+}
+
+.product-name{
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+
+.clearfix{
+    clear: both;
+}
