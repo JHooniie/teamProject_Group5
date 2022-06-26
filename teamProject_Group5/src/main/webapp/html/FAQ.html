@@ -20,38 +20,45 @@
 
 		<header>
 			<div id="headerBox">
-				<div class="top-channel-links">
-					<ul class="list-select">
-						<li class="init"><a href="#">Store</a></li>
-						<li class="hidden-list"><a href="#">Main</a></li>
-					</ul>
+				<div id="top-channel-links">
+					<div class="top-ani">S</div>
+					<div class="top-ani">t</div>
+					<div class="top-ani">o</div>
+					<div class="top-ani">r</div>
+					<div class="top-ani">e</div>
 				</div>
 				<div id="topMenuBox">
 					<ul id="top-list">
 						<li id="kor"><a href="#"><img class="country"
-								src="../image/country/Korea.png"></a></li>
-						<li><a href="#"><img src="../image/UIIcon/myPage.png"></li>
-						<li><a href="#"><img
-								src="../image/UIIcon/shopping_list.png"></li>
+								src="image/country/Korea.png"></a></li>
+						<li><a href="#"><img src="image/UIIcon/myPage.png"></a></li>
+						<li><a href="#"><img src="image/UIIcon/shopping_list.png"></a></li>
 					</ul>
 				</div>
 			</div>
+			<div id="selectcon">
+				<ul>
+					<li><a href="#"><img class="country"
+							src="image/country/UK.png"></a></li>
+					<li><a href="#"><img class="country"
+							src="image/country/Italy.png"></a></li>
+					<li><a href="#"><img class="country"
+							src="image/country/France.png"></a></li>
+				</ul>
+			</div>
 		</header>
-
-
-		<section>
-
+		<nav>
 			<div id="mainMenuBox">
 				<ul>
-					<li><a href="#"><img
-							src="../image/pageLogo/chukShinsa.png"></a></li>
-					<li id="mainMenuShowAll"><a>전체메뉴</a></li>
-					<li><a href="#">구단별</a></li>
-					<li><a href="#">용품별</a></li>
-					<li><a href="#">세일품목</a></li>
-					<li><a href="#">고객센터/FAQ </a></li>
-					<li><input type="text" value="검색창"></li>
-					<li><a href="#"><input type="button" value="확인"></a></li>
+					<li><a href="#"><img src="image/pageLogo/chukShinsa.png"></a></li>
+					<li><a href="#" id="ShowAllMenu"><img id="menuBtn"
+							src="image/UIIcon/allListn.png"></a></li>
+					<li class="subTitle"><a href="#">구단별</a></li>
+					<li class="subTitle"><a href="#">용품별</a></li>
+					<li class="subTitle"><a href="#">세일품목</a></li>
+					<li class="subTitle"><a href="#">고객센터/FAQ</a></li>
+					<li class="subTitle"><input type="text" value="검색창"><input
+						type="submit" value="확인"></li>
 				</ul>
 			</div>
 			<div id="subMenuBox">
@@ -63,7 +70,7 @@
 						<li><a href="#">subMenuItem1-4</a></li>
 					</ul>
 				</div>
-				<div class="subMenuItem" id="ctg_item">
+				<div class="subMenuItem" id="ctg_equipment">
 					<ul>
 						<li><a href="#">subMenuItem2-1</a></li>
 						<li><a href="#">subMenuItem2-2</a></li>
@@ -88,8 +95,7 @@
 					</ul>
 				</div>
 			</div>
-
-		</section>
+		</nav>
 
 
 
@@ -287,9 +293,7 @@
 
 		<footer>
 			<div id="footerBox">
-
 				<div id="bottomMenuBox">
-
 					<ul id="bottomMenuItem">
 						<li><a href="#">회사소개</a></li>
 						<li><a href="#">이용약관</a></li>
@@ -298,12 +302,37 @@
 						<li><a href="#">보안센터</a></li>
 						<li><a href="#">채용정보</a></li>
 					</ul>
-
 				</div>
-
-				<div id="companyInfo"></div>
-				<div id="moveToTopBox"></div>
-
+				<div id="companySponser">
+					<div id="cooperateCompany">
+						<div class="sponserBy">
+							by <a href="#"><img src="image/UIIcon/samsungLogo.png"></a>
+						</div>
+						<div class="sponserBy">
+							<a href="#"><img src="image/UIIcon/appleLogo.png"></a>
+						</div>
+						<div class="sponserBy">
+							<a href="#"><img src="image/UIIcon/MLPLogo.png"></a>
+						</div>
+					</div>
+					<div id="myCompany">
+						<img src="image/pageLogo/chukShinsa.png">
+					</div>
+					<div id="collaboSNS">
+						<div class="collaboBy">
+							with <a href="#"><img src="image/UIIcon/instargramLogo.png"></a>
+						</div>
+						<div class="collaboBy">
+							<a href="#"><img src="image/UIIcon/youtubeLogo.png"></a>
+						</div>
+						<div class="collaboBy">
+							<a href="#"><img src="image/UIIcon/facebookLogo.png"></a>
+						</div>
+					</div>
+				</div>
+				<div id="companyInfo">
+					<img src="image/pageLogo/copyright.png">
+				</div>
 			</div>
 		</footer>
 	</div>
