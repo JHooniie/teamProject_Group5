@@ -1,34 +1,84 @@
 @charset "UTF-8";
 
 
+#main {
+	color: red;
+	font-size: 40px;
+}
+
+#maintitle{
+		font-size: 25px;
+	}
+	
+	#icon{
+	font-size:10rem;
+	}
+
+.lg-text{
+	font-size:2rem;
+		font-weight: bold;
+		margin-bottom: 5px;
+	
+}
+.sm-text{
+	
+	font-size: 1.5rem;
+}
+	
+#dynamic{
+	position: relative;
+	display: inline-block;
+}
+	#dynamic::after{
+	content:"";
+	display: block;
+	position: absolute;
+	top:0;
+	right:-10px;
+	width:4px;
+	height:100%;
+	background-color: black;	
+	}
+	
+		#dynamic.active::after{
+	display: none;
+	
+	}
+	
+#won {
+	color: red;
+	font-size: 20px;
+}
+
 #saleBox {
-	width:80%;
-	height:1000px;
-	background:white;
-	padding:40px;
-	padding-top:20px;
+	width: 80%;
+	height: 1300px;
+	background: white;
+	padding: 40px;
+	padding-top: 20px;
+	text-align:center;
 }
 
 #saleBox .sale {
-	display:inline-block;
-	width:100%;
-	margin-top:20px;
+	display: inline-block;
+	width: 100%;
+	margin-top: 20px;
 }
 
-#saleBox .sale div{
-	display:inline-block;
-	width:303px;
-	height:203px;
-	border:solid 1px #cccccc;
-	margin:10px;
+#saleBox .sale div {
+	display: inline-block;
+	width: 303px;
+	height: 203px;
+	border: solid 1px #cccccc;
+	margin: 10px;
 }
 
 #saleBox .sale div img {
-	width:100%;
-	height:100%;
+	width: 100%;
+	height: 100%;
 }
 
 #saleBox .sale div:hover {
-	opacity:0.7;
-	border:solid 1px red; 
+	opacity: 0.7;
+	border: solid 1px red;
 }

@@ -1,14 +1,33 @@
-/**
- * sale.js
- */
- 
- $(document).ready(function() {
+let target = document.querySelector("#dynamic");
+let stringArr = ["Sale Product", "Sale Event", " June 22", "~" , " June 27"]
+   let selectString = stringArr[Math.floor(Math.random() *stringArr.length)];
+   let selectStringArr = selectString.split("");
+   	
+function dynamic(randomArr){
+   
+   if(randomArr.length > 0){
+	target.textContent += randomArr.shift
+	   target.textContent += randomArr.shift();
+	   setTimeout(function(){
+		   dynamic(randomArr);
+		   
+	   },80);
+   }
+}
+dynamic(selectStringArr);
 
-	// 주의! : 이벤트명 : 대소문자 구분 (다 소문자)
-	window.onload = function() {
-		var btn = document.getElementById("btn");
+console.log(selectString);
+	   console.log(selectStringArr);
 
-		btn.onclick = function() {
-			alert("클릭했습니다.");
-		}
-	}
+   //커서 깜빡임 효과
+	function blink(){
+
+   target.classList.toggle("active");
+   
+}
+setInterval(blink, 500);
+
+
+function resetTyping(){
+terget.textContent ="";
+}
