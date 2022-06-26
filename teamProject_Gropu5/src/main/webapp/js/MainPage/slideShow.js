@@ -5,15 +5,15 @@
  
    $(document).ready(function() {
 	
-	// 이동한 이미지의 index 값 저장(현재 위치)
+	
 	var movedIndex = 0;
 	
-	//슬라이드 패널을 움직이는 함수
+	
 	function moveSlide(index){
-		// 전달받은 index 값을 movedIndex에 저장
+		
 		movedIndex = index;
 		
-		// 슬라이드 이동
+		
 		var moveLeft = -(index * 1280);	// 왼쪽으로 이동 거리
 		$('#slidePanel').animate({'left':moveLeft}, 'slow');
 	}
@@ -38,3 +38,19 @@
 	
 	
 	});
+	
+/*	setTimeout(function(){
+					// 애니메이션 큐 제거
+					$('div').clearQueue();
+					
+					// 숨김
+					$('div').hide();
+				}, 6000);
+				
+				$('#box2').animate({left:'+=100'},1000)
+								.animate({width: '+=100'}, 2000)
+								.animate({height: '+=100'},2000,
+									 function() {
+										$(this).css('transform', 'rotate(30deg)');
+				} 
+				);*/
