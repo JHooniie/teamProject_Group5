@@ -1,31 +1,40 @@
-@charset "EUC-KR";
+@charset "UTF-8";
 
 /* tabMenu.css */
 
 /*********** TAB MENU ************/
 
 #best-prd_content{
-	margin-bottom:40px;
+	position:relative;
+	box-sizing:border-box;
 }
 
 #tabMenuBox {
-	width:90%;
-	height:580px;
+	position:relative;
+	width:100%;
+	height:690px;
 	background:white;
-	padding:40px;
 	text-align:center;
 }
 
-#tabMenuBox a{
-	 margin-bottom:40px;
+.prdTitle{
+	font-size:40px;
+	font-family:Fantasy;
+	font-weight:bold;
+	
 }
 
-#tabMenu ul { height:30px; padding:0;}
+#tabMenu ul { 
+	position:relative;
+	height:30px;
+	padding:0;
+	left:5%;
+	}
 
 #tabMenu ul li {
 	float:left;
 	list-style:none;
-	width:33%;
+	width:30%;
 	padding:0;
 	height:30px;
 	line-height:30px;
@@ -36,32 +45,68 @@
 
 #tabMenu img:hover { cursor:pointer;}
 
-/* ÅÇ ¼±ÅÃ Ç¥½Ã : js ÆÄÀÏ¿¡¼­ addClass()¿¡¼­ »ç¿ëÇÏ±â À§ÇÑ Å¬·¡½º ¼±ÅÃÀÚ */
+/* ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Ç¥ï¿½ï¿½ : js ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ addClass()ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 .selectedItem img {margin-top:-30px;}
 
 /*********** TAB CONTENT ********************/
-
+#best-prd_content{
+	margin:0 0 10px 0;
+	box-sizing:border-box;
+}
 #tabContent {
+	position:relative;
 	width:100%;
 	height:550px;
 	border-top:solid 1px #cccccc;
 	border-bottom:solid 1px #cccccc;
 	padding-bottom:20px;
-	margin-top:20px;
+	margin-top:0;
 	margin-bottom:20px;
+	box-sizing:border-box;
 }
 
-/* contentÀÇ ¸ðµç div ¼û±è */
+/* contentï¿½ï¿½ ï¿½ï¿½ï¿½ div ï¿½ï¿½ï¿½ï¿½ */
 
 #tabContent div {
+	position:relative;
 	display:none;
 	padding:0;
+	box-sizing:border-box;
 
 }
 
+
+
 #tabContent .clubTabContent { 
+	position:relative;
 	display:inline-block;
 	margin-bottom:20px;
+	box-sizing:border-box;
 }	
 
-.clubTabContent a img { width:90%; border:solid 1px #cccccc;}
+.clubTabContent a img {
+	width:90%;
+	border:solid 1px #cccccc;
+}
+
+#tabContent .itemTabContent { 
+	position:relative;
+	margin-bottom:20px;
+	box-sizing:border-box;
+}	
+
+.itemTabContent a img {
+	width:90%;
+	border:solid 1px #cccccc;
+}
+
+#tabContent .saleTabContent { 
+	position:relative;
+	margin-bottom:20px;
+	box-sizing:border-box;
+}	
+
+.saleTabContent a img {
+	width:90%;
+	border:solid 1px #cccccc;
+}
