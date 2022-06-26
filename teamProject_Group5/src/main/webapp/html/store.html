@@ -3,38 +3,91 @@
 <head>
     <title>Shop</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../css/store.css">
     <link href="../image/clubImage/liverPool.jpg" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/common.css" >
     <link rel="stylesheet" type="text/css" href="../css/index.css" >
     <link rel="stylesheet" type="text/css" href="../css/menu.css" >
-    <link rel="stylesheet" type="text/css" href="../css/MainPage/M_slideShow.css" >
     <link rel="stylesheet" type="text/css" href="../css/MainPage/M_tabMenu.css" >
-    <link rel="stylesheet" type="text/css" href="../css/MainPage/M_saleMenu.css" >
-    <link rel="stylesheet" type="text/css" href="../css/MainPage/M_tabMenu.css" >
+    <link rel="stylesheet" href="../css/StorePage/store.css">
     <script src="js/jquery-3.6.0.min.js"></script>	
-    <script src="js/MainPage/languageWin.js"></script>
-    <script src="js/MainPage/slideShow.js"></script>	
     <script type="text/javascript"></script>
 </head>
 <body>
-    <header>
-        <div id="headerBox">
-            <div class="top-channel-links">
-                    <ul class="list-select">
-                    <li class="init"><a href="#">Store</a></li>
-                    <li class="hidden-list"><a href="#">Main</a></li>
-                </ul>
-            </div>
-            <div id="topMenuBox">
-                <ul id="top-list">
-                    <li id="kor" ><a href="#" ><img class="country" src="../image/country/Korea.png"></a></li>								
-                    <li><a href="#" ><img src="../image/UIIcon/myPage.png"></li>
-                    <li><a href="#" ><img src="../image/UIIcon/shopping_list.png"></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+    <div id="wrap">
+		<header>
+        		<div id="headerBox">
+	            	<div id="top-channel-links">
+					        <div class="top-ani">S</div>
+					        <div class="top-ani">t</div>
+					        <div class="top-ani">o</div>
+					        <div class="top-ani">r</div>
+					        <div class="top-ani">e</div>
+					</div>
+					<div id="topMenuBox">
+						<ul id="top-list">
+							<li id="kor" ><a href="#" ><img class="country" src="../image/country/Korea.png"></a></li>								
+							<li><a href="#" ><img src="../image/UIIcon/myPage.png"></a></li>
+							<li><a href="#" ><img src="../image/UIIcon/shopping_list.png"></a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="selectcon">
+				<ul>
+					<li><a href="#" ><img class="country" src="../image/country/UK.png"></a></li>
+					<li><a href="#" ><img class="country" src="../image/country/Italy.png"></a></li>
+					<li><a href="#" ><img class="country" src="../image/country/France.png"></a></li>
+				</ul>
+				</div>
+            </header>
+		<nav>
+			<div id="mainMenuBox">
+				<ul>
+					<li><a href="#"><img src="../image/pageLogo/chukShinsa.png"></a></li>
+					<li><a href="#" id="ShowAllMenu"><img id="menuBtn"
+							src="../image/UIIcon/allListn.png"></a></li>
+					<li class="subTitle"><a href="#">구단별</a></li>
+					<li class="subTitle"><a href="#">용품별</a></li>
+					<li class="subTitle"><a href="#">세일품목</a></li>
+					<li class="subTitle"><a href="#">고객센터/FAQ</a></li>
+					<li class="subTitle"><input type="text" value="검색창"><input
+						type="submit" value="확인"></li>
+				</ul>
+			</div>
+			<div id="subMenuBox">
+                	<div class="subMenuItem" id="ctg_club">
+						<ul>
+							<li><a href="#">리버풀</a></li>
+							<li><a href="#">맨체스터유나이티드</a></li>
+							<li><a href="#">토트넘</a></li>
+							<li><a href="#">첼시</a></li>
+						</ul>
+					</div>
+					<div class="subMenuItem" id="ctg_equipment">
+						<ul>
+							<li><a href="#">유니폼 상의</a></li>
+							<li><a href="#">유니폼 하의</a></li>
+							<li><a href="#">가방</a></li>
+							<li><a href="#">악세서리</a></li>
+						</ul>
+					</div>
+					<div class="subMenuItem" id="ctg_sale">
+						<ul>
+							<li><a href="#">유니폼 상의</a></li>
+							<li><a href="#">유니폼 하의</a></li>
+							<li><a href="#">가방</a></li>
+							<li><a href="#">악세서리</a></li>
+						</ul>
+					</div>
+					<div class="subMenuItem" id="ctg_FAQ">
+						<ul>
+							<li><a href="#">자주 묻는 질문들</a></li>
+							<li><a href="#">환불/교환 안내</a></li>
+							<li><a href="#">제품 문의</a></li>
+							<li><a href="#">입점 문의</a></li>
+						</ul>
+					</div>
+                </div> 
+		</nav>
 
     <div class="hero-header" ></div>
 
@@ -168,23 +221,46 @@
             </a>
             <div class="clearfix"></div>
         </div>
-        <footer>
-            <div id="footerBox">
-             <div id="bottomMenuBox">
-                 <ul id="bottomMenuItem">
-                        <li><a href="#">회사소개</a></li>
-                        <li><a href="#">이용약관</a></li>
-                        <li><a href="#">개인정보 처리방침</a></li>
-                        <li><a href="#">전자금융거래약관</a></li>
-                        <li><a href="#">보안센터</a></li>
-                        <li><a href="#">채용정보</a></li>
-                    </ul>
-             </div>
-             <div id="companyInfo"></div>
-             <div id="moveToTopBox"></div>
-            </div>
-        </footer>
-        
-    </div>
-</body>
+       <footer>
+            	<div id="footerBox">
+            	 <div id="bottomMenuBox">
+            	 	<ul id="bottomMenuItem">
+							<li><a href="#">회사소개</a></li>
+							<li><a href="#">이용약관</a></li>
+							<li><a href="#">개인정보 처리방침</a></li>
+							<li><a href="#">전자금융거래약관</a></li>
+							<li><a href="#">보안센터</a></li>
+							<li><a href="#">채용정보</a></li>
+						</ul>
+            	 </div>
+            	 	<div id="companySponser">
+	            	 	<div id="cooperateCompany">
+	            	 		<div class="sponserBy">by
+	            	 			<a href="#"><img src="../image/UIIcon/samsungLogo.png"></a>
+	            	 		</div>
+	            	 		<div class="sponserBy">
+	            	 			<a href="#"><img src="../image/UIIcon/appleLogo.png"></a>
+	            	 		</div>
+	            	 		<div class="sponserBy">
+	            	 			<a href="#"><img src="../image/UIIcon/MLPLogo.png"></a>
+	            	 		</div>
+	 					</div>
+	 					<div id="myCompany"><img src="../image/pageLogo/chukShinsa.png"></div>
+	 					<div id="collaboSNS">
+	 						<div class="collaboBy">with
+	 							<a href="#"><img src="../image/UIIcon/instargramLogo.png"></a>
+	 						</div>
+	 						<div class="collaboBy">
+	 							<a href="#"><img src="../image/UIIcon/youtubeLogo.png"></a>
+	 						</div>
+	 						<div class="collaboBy">
+	 							<a href="#"><img src="../image/UIIcon/facebookLogo.png"></a>
+	 						</div>
+	 					</div>
+            		</div>
+            		<div id="companyInfo"><img src="../image/pageLogo/copyright.png"></div>
+            	 </div>
+            </footer>
+      </div>
+    </body>
 </html>

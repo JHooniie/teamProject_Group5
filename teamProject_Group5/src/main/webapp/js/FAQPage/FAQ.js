@@ -126,5 +126,11 @@ $(document).ready(function() {
 			chatbotChat.style.display = 'none';
 		}
 	});
+	
+	$(window).on('scroll', function(){
+		if($(document).scrollBottom() >= $('#footerBox').height()){
+			$('#mainMenuBox').addClass('mainMenuFixed mainMenuShadow');
+		}else {$('#mainMenuBox').removeClass('mainMenuFixed mainMenuShadow');}
+	});
 
 });
