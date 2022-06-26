@@ -29,24 +29,49 @@ a {
 	display: flex;
 	flex-direction: column;
 	background: #dc0714;
-	width: 80%;
+	width: 300px;
 	padding: 20px 10px;
-	background: #dc0714;
 }
 
 #navMenu {
 	line-height: 70px;
 }
 
+#navMenu1 {
+	width: 300px;
+	border-top: 2px solid #f3f3f3;
+}
+
+#navMenu2 {
+	width: 300px;
+	border-top: 2px solid #f3f3f3;
+}
+
+#navMenu3 {
+	width: 300px;
+	border-top: 2px solid #f3f3f3;
+}
+
+#navMenu4 {
+	width: 300px;
+	border-top: 2px solid #f3f3f3;
+}
+
+#navMenu5 {
+	width: 300px;
+	border-top: 2px solid #f3f3f3;
+}
+
 #pagenation {
 	/* 	border: 1px solid green; */
 	background: #f3f3f3;
-	padding: 10px;
+	padding: 20px;
 }
 
 #pageBox {
 	/* 	border: 1px solid red; */
-	padding: 10px;
+	padding: 20px;
+	border-bottom: 2px solid #f3f3f3;
 }
 
 #faqTitle {
@@ -78,10 +103,20 @@ a {
 
 #notice {
 	border-top: 3px solid #f3f3f3;
-	padding: 20px;
+	padding: 30px;
 	text-align: left;
 	line-height: 30px;
 	font-size: 13px;
+}
+
+#navMenu6 {
+	font-size: 16px;
+	line-height: 50px;
+}
+
+#navMenu7 {
+	font-size: 11px;
+	line-height: 30px;
 }
 
 /********** 챗봇 ************/
