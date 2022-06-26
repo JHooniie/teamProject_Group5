@@ -1,4 +1,4 @@
-@charset "EUC-KR";
+@charset "UTF-8";
 
 /* M_slideShow.css */
 
@@ -19,7 +19,7 @@
 
 #slidePanel {
 	position:relative;
-	width:6400px;	/* ÀÌ¹ÌÁö 5°³ ¿·À¸·Î ³ª¶õÈ÷ */
+	width:6400px;
 	height:480px;
 }
 
@@ -29,7 +29,7 @@
 	height:480px;
 }
 
-/*  prev/next ¹öÆ° */
+/*  prev/next ï¿½ï¿½Æ° */
 #prevpuaseNextButtonBox {
 	position:relative;
 	z-index:10;
@@ -42,7 +42,7 @@
 #pauseButton:hover {opacity:1;}
 #nextButton:hover {opacity:1;}
 /* 
-control ¹öÆ°
+control ï¿½ï¿½Æ°
 #controlPanel { margin:0 auto; width:160px;}
 #controlPanel img { float:left; margin:10px;}
  */

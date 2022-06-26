@@ -1,65 +1,56 @@
-@charset "EUC-KR";
+@charset "UTF-8";
 
 /*mapBox.css*/
 
 #clubMap {
 	width:1280px;
-	heiht:1000px;
+	height:1000px;
 	background-color:#ffffff;
 }
 
 #clubList{
-	padding:40px;
+	height:1000px;
+	padding:0;
 	text-align:center;
 }
 
-#clubList #clubcountry {
-	float:left;
+
+.prdTitle{
+	font-size:40px;
+	font-family:Fantasy;
+	font-weight:bold;
+	margin-bottom:20px;
+}
+
+#europeMap{
+	position:relative;
+	width:1280px;
+	height:800px;
+	box-sizing:border-box;
+	
+}
+#europeMap img:first-child{
+	opacity:0.5;
+}
+
+#ukMap{
 	position:absolute;
-	margin:0;
-	width:20%;
-	background-color:#dc0714;
+	left:5px;
+	top:187px;
+	opacity:0;
 }
 
-#clubList #clubcountry .countryLogo{
-	display:block;
-	width:100px;
-	height:150px;
-}
-#clubList #clubcountry div a img{
-	display:block;
-	width:100px;
-	height:100px;
+#ukMap:hover {
+	opacity:1;
 }
 
-#clubList #europeMap{
-	display:inline-block;
+#itaMap{
 	position:absolute;
-	align:center;
-	width:40%;
+	bottom:40px;
+	left:450px;
+	opacity:0;
 }
 
-#clubList #europeMap img {
-	position:absolute;
-	width:500px;
-	height:90%;
-}
-
-#clubList #clubLogo{
-	float:right;
-	position:absolute;
-	width:20%;
-}
-
-#clubList #clubLogo div{
-	display:block;
-	width:150px;
-	height:150px;
-}
-#clubList #clubLogo div a img{
-  display: block;
-  max-width:150px;
-  max-height:200px;
-  width: auto;
-  height: auto;
+#itaMap:hover {
+	opacity:1;
 }
