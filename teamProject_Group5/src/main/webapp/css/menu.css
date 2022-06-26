@@ -9,6 +9,7 @@ ul {
 	list-style: none; /* type 없음 */
 }
 
+
 /********** TOP MENU ************/
 #top-channel-links {
 	position:absolute;
@@ -60,20 +61,24 @@ ul {
 	width: 80%;
 	height: 50px;
 }
+
 #selectcon {
 	position:absolute;
-	width:60px;
+	width:55px;
 	height:150px;
 	z-index:15;
 	padding:1px;
-	background-color:#dc0714;
+	background-color:#f72634;
+	border:0;
+	border-radius:10px 10px;
 	right:65px;
-	opacity:0.8;
-	visibility: hidden;
+	top:60px;
+	display:none;
 }
 #selectcon li{
 	width:50px;
 	height:50px;
+	border-bottom:white 1px;
 }
 
 .country {
@@ -81,6 +86,7 @@ ul {
 	display:block;
 	width:40px;
 	height:40px;
+	margin:0 auto;
 }
 
 
@@ -280,7 +286,15 @@ ul {
 	top:0;
 	box-sizing:border-box;
 }
-
+.sponseredWrite{
+	position:absolute;
+	width:10px;
+	height:10px;
+	top:15px;
+	left:290px;
+	font-size:15px;
+	z-index:15;
+}
 .sponserBy {
 	position:relative;
 	width:18%;
