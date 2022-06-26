@@ -206,6 +206,10 @@ ul {
 	visibility: hidden; /* 시작 시 SUB MENU 항목 숨김 */
 }
 
+#subMenuBox{
+	text-decoration:none;
+}
+
 .subMenuItem {
 	width: 12%;
 	display:inline-block;
