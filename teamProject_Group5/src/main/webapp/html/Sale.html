@@ -1,223 +1,225 @@
-
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>프로젝트 예제 : index 메인 페이지</title>
-		<link rel="stylesheet" type="text/css" href="../css/common.css">
-		<link rel="stylesheet" type="text/css" href="../css/index.css">
-		<link rel="stylesheet" type="text/css" href="../css/menu.css">
-		<link rel="stylesheet" type="text/css" href="../css/SlaePage/tabMenu.css">
-		<link rel="stylesheet" type="text/css" href="../css/salePrd.css">
-		<script src="../js/jquery-3.6.0.min.js"></script>
-		<script type="text/javascript"></script>
+		<title>프로젝트 예제 : index 메인 페이지</title> 
+		<link rel="stylesheet" type="text/css" href="../css/common.css" >
+		<link rel="stylesheet" type="text/css" href="../css/index.css" >
+		<link rel="stylesheet" type="text/css" href="../css/menu.css" >
+		<link rel="stylesheet" type="text/css" href="../css/MainPage/M_tabMenu.css" >
+		<link rel="stylesheet" type="text/css" href="../css/SalePage/sale.css" >
+		<script src="js/jquery-3.6.0.min.js"></script>	
+		<script type="text/javascript">
+	$(document).ready(function(){
+		window.onload =function(){
+			var btn = document.getElementById("btn");
+			btn.onclick = function(){
+			alert("구매하시겠습니까?");
+		}}});
+
+		</script>
 	</head>
-	<body>
-		<div id="wrap">
-			<header>
-			<div id="headerBox">
-				<div class="top-channel-links">
-					<ul class="list-select">
-						<li class="init"><a href="#">Store</a></li>
-						<li class="hidden-list"><a href="#">Main</a></li>
-					</ul>
-				</div>
-				<div id="topMenuBox">
-							<ul id="top-list">
-								<li id="kor" ><a href="#" ><img class="country" src="../image/country/Korea.png"></a></li>								
-								<li><a href="#"><img src="../image/UIIcon/myPage.png"></li>
-								<li><a href="#"><img src="../image/UIIcon/shopping_list.png"></li>
-							</ul>
-						</div>
+<body>
+	<div id="wrap">
+		<header>
+        		<div id="headerBox">
+	            	<div id="top-channel-links">
+					        <div class="top-ani">S</div>
+					        <div class="top-ani">t</div>
+					        <div class="top-ani">o</div>
+					        <div class="top-ani">r</div>
+					        <div class="top-ani">e</div>
 					</div>
-	            </header>
-			<nav>
-				<div id="mainMenuBox">
-					<ul>
-						<li><a href="#"><img src="../image/pageLogo/chukShinsa.png"></a></li>
-						<li id="mainMenuShowAll"><a>전체메뉴</a></li>
-						<li><a href="#">구단별</a></li>
-						<li><a href="#">용품별</a></li>
-						<li><a href="#">세일품목</a></li>
-						<li><a href="#">고객센터/FAQ </a></li>
-						<li><input type="text" value="검색창"></li>
-						<li><a href="#"><input type="button" value="확인"></a></li>
-					</ul>
+					<div id="topMenuBox">
+						<ul id="top-list">
+							<li id="kor" ><a href="#" ><img class="country" src="../image/country/Korea.png"></a></li>								
+							<li><a href="#" ><img src="../image/UIIcon/myPage.png"></a></li>
+							<li><a href="#" ><img src="../image/UIIcon/shopping_list.png"></a></li>
+						</ul>
+					</div>
 				</div>
-				<div id="subMenuBox">
-					<div class="subMenuItem" id="ctg_club">
+				<div id="selectcon">
+				<ul>
+					<li><a href="#" ><img class="country" src="../image/country/UK.png"></a></li>
+					<li><a href="#" ><img class="country" src="../image/country/Italy.png"></a></li>
+					<li><a href="#" ><img class="country" src="../image/country/France.png"></a></li>
+				</ul>
+				</div>
+            </header>
+		<nav>
+			<div id="mainMenuBox">
+				<ul>
+					<li><a href="#"><img src="../image/pageLogo/chukShinsa.png"></a></li>
+					<li><a href="#" id="ShowAllMenu"><img id="menuBtn"
+							src="../image/UIIcon/allListn.png"></a></li>
+					<li class="subTitle"><a href="#">구단별</a></li>
+					<li class="subTitle"><a href="#">용품별</a></li>
+					<li class="subTitle"><a href="#">세일품목</a></li>
+					<li class="subTitle"><a href="#">고객센터/FAQ</a></li>
+					<li class="subTitle"><input type="text" value="검색창"><input
+						type="submit" value="확인"></li>
+				</ul>
+			</div>
+			<div id="subMenuBox">
+                	<div class="subMenuItem" id="ctg_club">
 						<ul>
-							<li><a href="#">subMenuItem1-1</a></li>
-							<li><a href="#">subMenuItem1-2</a></li>
-							<li><a href="#">subMenuItem1-3</a></li>
-							<li><a href="#">subMenuItem1-4</a></li>
+							<li><a href="#">리버풀</a></li>
+							<li><a href="#">맨체스터유나이티드</a></li>
+							<li><a href="#">토트넘</a></li>
+							<li><a href="#">첼시</a></li>
 						</ul>
 					</div>
 					<div class="subMenuItem" id="ctg_equipment">
 						<ul>
-							<li><a href="#">subMenuItem2-1</a></li>
-							<li><a href="#">subMenuItem2-2</a></li>
-							<li><a href="#">subMenuItem2-3</a></li>
-							<li><a href="#">subMenuItem2-4</a></li>
+							<li><a href="#">유니폼 상의</a></li>
+							<li><a href="#">유니폼 하의</a></li>
+							<li><a href="#">가방</a></li>
+							<li><a href="#">악세서리</a></li>
 						</ul>
 					</div>
 					<div class="subMenuItem" id="ctg_sale">
 						<ul>
-							<li><a href="#">subMenuItem3-1</a></li>
-							<li><a href="#">subMenuItem3-2</a></li>
-							<li><a href="#">subMenuItem3-3</a></li>
-							<li><a href="#">subMenuItem3-4</a></li>
+							<li><a href="#">유니폼 상의</a></li>
+							<li><a href="#">유니폼 하의</a></li>
+							<li><a href="#">가방</a></li>
+							<li><a href="#">악세서리</a></li>
 						</ul>
 					</div>
 					<div class="subMenuItem" id="ctg_FAQ">
 						<ul>
-							<li><a href="#">subMenuItem4-1</a></li>
-							<li><a href="#">subMenuItem4-2</a></li>
-							<li><a href="#">subMenuItem4-3</a></li>
-							<li><a href="#">subMenuItem4-4</a></li>
+							<li><a href="#">자주 묻는 질문들</a></li>
+							<li><a href="#">환불/교환 안내</a></li>
+							<li><a href="#">제품 문의</a></li>
+							<li><a href="#">입점 문의</a></li>
 						</ul>
 					</div>
-				</div>
-			</nav>
+                </div> 
+		</nav>
+		<section>
+			<article id="searchBar">
+				<input id="searchBarInput" type="text" value="검색창">
+				<!-- 검색창 -->
+			</article>
 			<section>
-				<article id="searchBar">
-					<input id="searchBarInput" type="text" value="검색창">
-					<!-- 검색창 -->
+				<article id="content2">
+					<!-- 세일 상품 -->
+					<div id="saleBox">
+						<h3>세일 상품</h3>
+						<div class="sale">
+							<h2>유니폼</h2>
+
+							<div>
+								<img src="../image/salePage/sale1.PNG"></a>
+								<h3>유니폼</h3>
+								<button id="btn">구매</button>
+
+							</div>
+							<div>
+								<img src="../image/salePage/sale2.PNG"></a>
+								<h3>유니폼</h3>
+								<button id="btn">구매</button>
+
+							</div>
+							<div>
+								<img src="../image/salePage/sale3.PNG"></a>
+								<h3>유니폼</h3>
+								<button id="btn">구매</button>
+
+							</div>
+
+						</div>
+						<div class="sale">
+						<br>
+							<h2>바지</h2>
+							<div>
+							
+
+								<img src="../image/salePage/salepants.PNG"></a>
+								<h3>바지</h3>
+								<button id="btn">구매</button>
+
+							</div>
+							<div>
+								<img src="../image/salePage/salepants2.PNG"></a>
+								<h3>바지</h3>
+								<button id="btn">구매</button>
+
+							</div>
+							<div>
+								<img src="../image/salePage/salepants3.PNG"></a>
+								<h3>바지</h3>
+								<button id="btn">구매</button>
+							</div>
+
+
+
+						</div>
+						
+						<br>
+						<h2>악세사리</h2>
+						<div class="sale">
+							<div>
+								<a> <img src="../image/salePage/A1.PNG"></a>
+								<h3>악세사리</h3>
+								<button id="btn">구매</button>
+							</div>
+							<div>
+								<img src="../image/salePage/a2.PNG"></a>
+								<h3>악세사리</h3>
+								<button id="btn">구매</button>
+							</div>
+							<div>
+								<img src="../image/salePage/a3.PNG"></a>
+								<h3>악세사리</h3>
+								<button id="btn">구매</button>
+							</div>
+
+						</div>
+					</div>
+
 				</article>
 			</section>
-			<article id="best-prd_content">
-				<!-- 베스트 상품 -->
-				<div id="tabMenuBox">
-					<h2>세일 상품</h2>
-	
-					<div id="sale-prd">
-						<h2>상의</h2>
-						<ul id="top">
-							<li><div>
-									<a href="#"><img src="../image/salePage/sale1.PNG"></a>
-	
-									<h3 class="prdTitle">
-										편안한 상의<br>지금 30% 할인
-									</h3>
-									<p class="prdPrice">35,000원</p>
-								</div></li>
-							<li><div>
-									<a href="#"><img src="../image/salePage/sale2.PNG"></a>
-									<h3 class="prdTitle">
-										검은색 체크 상의<br>지금 30% 할인
-									</h3>
-									<p class="prdPrice">20,000원</p>
-								</div></li>
-							<li><div>
-									<a href="#"><img src="../image/salePage/sale3.PNG"></a>
-									<h3 class="prdTitle">
-										빨간색 체크 상의<br>지금 30% 할인
-									</h3>
-									<p class="prdPrice">25,800원</p>
-								</div></li>
-							<li><div>
-									<a href="#"><img src="../image/salePage/sale4.PNG"></a>
-									<h3 class="prdTitle">
-										어린이 상의<br>지금 30% 할인
-									</h3>
-									<p class="prdPrice">25,800원</p>
-								</div></li>
+
+			<footer>
+            	<div id="footerBox">
+            	 <div id="bottomMenuBox">
+            	 	<ul id="bottomMenuItem">
+							<li><a href="#">회사소개</a></li>
+							<li><a href="#">이용약관</a></li>
+							<li><a href="#">개인정보 처리방침</a></li>
+							<li><a href="#">전자금융거래약관</a></li>
+							<li><a href="#">보안센터</a></li>
+							<li><a href="#">채용정보</a></li>
 						</ul>
-					</div>
-				</div>
-			</article>
-			<article id="sale-prd">
-				<!-- 세일 상품 -->
-				<div id="Underwear">
-					<h2>바지</h2>
-					<ul id="Under">
-						<li><div>
-								<a href="#"> <img src="../image/salePage/salepants.PNG">
-								</a>
-								<h3 class="prdTitle">
-									휴일에 입기 좋은 하의<br>지금 30% 할인
-								</h3>
-	
-							</div></li>
-						<li><div>
-								<a href="#"> <img src="../image/salePage/salepants2.PNG"></a>
-								<h3 class="prdTitle">
-									수영복 바지<br>지금 30% 할인
-								</h3>
-								<p class="prdPrice">45,000원</p>
-							</div></li>
-						<li><div>
-								<a href="#"> <img src="../image/salePage/salepants3.PNG"></a>
-								<h3 class="prdTitle">
-									검은 체크 하의<br>지금 30% 할인
-								</h3>
-								<p class="prdPrice">55,000원</p>
-							</div></li>
-						<li><div>
-								<a href="#"> <img src="../image/salePage/salepants4.PNG"></a>
-								<h3 class="prdTitle">
-									빨강 반바지<br>지금 30% 할인
-								</h3>
-								<p class="prdPrice">45,000원</p>
-							</div></li>
-					</ul>
-				</div>
-			</article>
-			<article id="sale-prd">
-				<!-- 세일 상품 -->
-				<div id="Under">
-					<h2>악세사리</h2>
-					<ul id="ac">
-						<li><div>
-								<a href="#"> <img src="../image/salePage/A1.PNG"></a>
-						
-								<h3 class="prdTitle">
-									가죽 카드 지갑<br>지금 30% 할인
-								</h3>
-								<p class="prdPrice">45,000원</p>
-							</div></li>
-						<li><div>
-								<a href="#"> <img src="../image/salePage/a2.PNG"></a>
-								<h3 class="prdTitle">
-									여행용 멀티탭<br>지금 30% 할인
-								</h3>
-								<p class="prdPrice">25,000원</p>
-							</div></li>
-						<li><div>
-								<a href="#"> <img src="../image/salePage/a3.PNG"></a>
-								<h3 class="prdTitle">
-									검은 헤드셋(닥터 마틴)<br>지금 30% 할인
-								</h3>
-								<p class="prdPrice">550,000원</p>
-							</div></li>
-						<li><div>
-								<a href="#"> <img src="../image/salePage/a4.PNG"></a>
-								<h3 class="prdTitle">
-									클런치 백<br>지금 30% 할인
-								</h3>
-								<p class="prdPrice">405,000원</p>
-							</div></li>
-					</ul>
-				</div>
-			</article>
-		</div>
-	
-		<footer>
-			<div id="footerBox">
-				<div id="bottomMenuBox">
-					<ul id="bottomMenuItem">
-						<li><a href="#">회사소개</a></li>
-						<li><a href="#">이용약관</a></li>
-						<li><a href="#">개인정보 처리방침</a></li>
-						<li><a href="#">전자금융거래약관</a></li>
-						<li><a href="#">보안센터</a></li>
-						<li><a href="#">채용정보</a></li>
-					</ul>
-				</div>
-				<div id="companyInfo"></div>
-				<div id="moveToTopBox"></div>
-			</div>
-		</footer>
-		</div>
-	</body>
+            	 </div>
+            	 	<div id="companySponser">
+	            	 	<div id="cooperateCompany">
+	            	 		<div class="sponserBy">by
+	            	 			<a href="#"><img src="../image/UIIcon/samsungLogo.png"></a>
+	            	 		</div>
+	            	 		<div class="sponserBy">
+	            	 			<a href="#"><img src="../image/UIIcon/appleLogo.png"></a>
+	            	 		</div>
+	            	 		<div class="sponserBy">
+	            	 			<a href="#"><img src="../image/UIIcon/MLPLogo.png"></a>
+	            	 		</div>
+	 					</div>
+	 					<div id="myCompany"><img src="../image/pageLogo/chukShinsa.png"></div>
+	 					<div id="collaboSNS">
+	 						<div class="collaboBy">with
+	 							<a href="#"><img src="../image/UIIcon/instargramLogo.png"></a>
+	 						</div>
+	 						<div class="collaboBy">
+	 							<a href="#"><img src="../image/UIIcon/youtubeLogo.png"></a>
+	 						</div>
+	 						<div class="collaboBy">
+	 							<a href="#"><img src="../image/UIIcon/facebookLogo.png"></a>
+	 						</div>
+	 					</div>
+            		</div>
+            		<div id="companyInfo"><img src="../image/pageLogo/copyright.png"></div>
+            	 </div>
+            </footer>
+      </div>
+    </body>
 </html>
