@@ -1,231 +1,263 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>프로젝트 예제 : index 메인 페이지</title> 
-		<link rel="stylesheet" type="text/css" href="../css/common.css" >
-		<link rel="stylesheet" type="text/css" href="../css/index.css" >
-		<link rel="stylesheet" type="text/css" href="../css/menu.css" >
-		<link rel="stylesheet" type="text/css" href="../css/MainPage/M_tabMenu.css" >
-		<link rel="stylesheet" type="text/css" href="../css/SalePage/sale.css" >
-		<script src="../js/jquery-3.6.0.min.js"></script>	
-	    <script src="../js/MainPage/index.js"></script>	
-		<script src="../js/MainPage/headerMenu.js"></script>	
-		<script src="../js/MainPage/languageWin.js"></script>
-		<script src="../js/MainPage/mapleague.js"></script>
-		<script type="text/javascript">
-	$(document).ready(function(){
-		window.onload =function(){
-			var btn = document.getElementById("btn");
-			btn.onclick = function(){
-			alert("구매하시겠습니까?");
-		}}});
+<head>
+<meta charset="UTF-8">
+<title>프로젝트 예제 : index 메인 페이지</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/index.css">
+<link rel="stylesheet" type="text/css" href="../css/menu.css">
+<link rel="stylesheet" type="text/css" href="../css/SalePage/sale.css">
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/MainPage/subMenu.js"></script>
+<script src="../js/SalePage/sale.js"></script>
 
-		</script>
-	</head>
+</head>
 <body>
 	<div id="wrap">
 		<header>
-        		<div id="headerBox">
-	            	<div id="top-channel-links">
-					        <div class="top-ani">S</div>
-					        <div class="top-ani">t</div>
-					        <div class="top-ani">o</div>
-					        <div class="top-ani">r</div>
-					        <div class="top-ani">e</div>
-					</div>
-					<div id="topMenuBox">
-						<ul id="top-list">
-							<li id="kor" ><a href="#" ><img class="country" src="../image/country/Korea.png"></a></li>								
-							<li><a href="#" ><img src="../image/UIIcon/myPage.png"></a></li>
-							<li><a href="#" ><img src="../image/UIIcon/shopping_list.png"></a></li>
-						</ul>
-					</div>
+			<div id="headerBox">
+				<div id="top-channel-links">
+					<div class="top-ani">S</div>
+					<div class="top-ani">t</div>
+					<div class="top-ani">o</div>
+					<div class="top-ani">r</div>
+					<div class="top-ani">e</div>
 				</div>
-				<div id="selectcon">
+				<div id="topMenuBox">
+					<ul id="top-list">
+						<li id="kor"><a href="#"><img class="country"
+								src="../image/country/Korea.png"></a></li>
+						<li><a href="#"><img src="../image/UIIcon/myPage.png"></a></li>
+						<li><a href="#"><img
+								src="../image/UIIcon/shopping_list.png"></a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="selectcon">
 				<ul>
-					<li><a href="#" ><img class="country" src="../image/country/UK.png"></a></li>
-					<li><a href="#" ><img class="country" src="../image/country/Italy.png"></a></li>
-					<li><a href="#" ><img class="country" src="../image/country/France.png"></a></li>
+					<li><a href="#"><img class="country"
+							src="../image/country/UK.png"></a></li>
+					<li><a href="#"><img class="country"
+							src="../image/country/Italy.png"></a></li>
+					<li><a href="#"><img class="country"
+							src="../image/country/France.png"></a></li>
 				</ul>
-				</div>
-            </header>
+			</div>
+		</header>
 		<nav>
 			<div id="mainMenuBox">
 				<ul>
-					<li><a href="#"><img src="../image/pageLogo/chukShinsa.png"></a></li>
+					<li><a href="#"><img
+							src="../image/pageLogo/chukShinsa.png"></a></li>
 					<li><a href="#" id="ShowAllMenu"><img id="menuBtn"
 							src="../image/UIIcon/allListn.png"></a></li>
 					<li class="subTitle"><a href="#">구단별</a></li>
 					<li class="subTitle"><a href="#">용품별</a></li>
 					<li class="subTitle"><a href="#">세일품목</a></li>
-					<li class="subTitle"><a href="FAQ.html">고객센터/FAQ</a></li>
+					<li class="subTitle"><a href="#">고객센터/FAQ</a></li>
 					<li class="subTitle"><input type="text" value="검색창"><input
 						type="submit" value="확인"></li>
 				</ul>
 			</div>
 			<div id="subMenuBox">
-                	<div class="subMenuItem" id="ctg_club">
-						<ul>
-							<li><a href="#">리버풀</a></li>
-							<li><a href="#">맨체스터유나이티드</a></li>
-							<li><a href="#">토트넘</a></li>
-							<li><a href="#">첼시</a></li>
-						</ul>
-					</div>
-					<div class="subMenuItem" id="ctg_equipment">
-						<ul>
-							<li><a href="#">유니폼 상의</a></li>
-							<li><a href="#">유니폼 하의</a></li>
-							<li><a href="#">가방</a></li>
-							<li><a href="#">악세서리</a></li>
-						</ul>
-					</div>
-					<div class="subMenuItem" id="ctg_sale">
-						<ul>
-							<li><a href="#">유니폼 상의</a></li>
-							<li><a href="#">유니폼 하의</a></li>
-							<li><a href="#">가방</a></li>
-							<li><a href="#">악세서리</a></li>
-						</ul>
-					</div>
-					<div class="subMenuItem" id="ctg_FAQ">
-						<ul>
-							<li><a href="FAQ.html">자주 묻는 질문들</a></li>
-							<li><a href="FAQ.html">환불/교환 안내</a></li>
-							<li><a href="FAQ.html">제품 문의</a></li>
-							<li><a href="FAQ.html">입점 문의</a></li>
-						</ul>
-					</div>
-                </div> 
+				<div class="subMenuItem" id="ctg_club">
+					<ul>
+						<li><a href="#">리버풀</a></li>
+						<li><a href="#">맨체스터유나이티드</a></li>
+						<li><a href="#">토트넘</a></li>
+						<li><a href="#">첼시</a></li>
+					</ul>
+				</div>
+				<div class="subMenuItem" id="ctg_equipment">
+					<ul>
+						<li><a href="#">유니폼 상의</a></li>
+						<li><a href="#">유니폼 하의</a></li>
+						<li><a href="#">가방</a></li>
+						<li><a href="#">악세서리</a></li>
+					</ul>
+				</div>
+				<div class="subMenuItem" id="ctg_sale">
+					<ul>
+						<li><a href="#">유니폼 상의</a></li>
+						<li><a href="#">유니폼 하의</a></li>
+						<li><a href="#">가방</a></li>
+						<li><a href="#">악세서리</a></li>
+					</ul>
+				</div>
+				<div class="subMenuItem" id="ctg_FAQ">
+					<ul>
+						<li><a href="#">자주 묻는 질문들</a></li>
+						<li><a href="#">환불/교환 안내</a></li>
+						<li><a href="#">제품 문의</a></li>
+						<li><a href="#">입점 문의</a></li>
+					</ul>
+				</div>
+			</div>
 		</nav>
 		<section>
 			<article id="searchBar">
 				<input id="searchBarInput" type="text" value="검색창">
 				<!-- 검색창 -->
 			</article>
-			<section>
-				<article id="content2">
-					<!-- 세일 상품 -->
-					<div id="saleBox">
-						<h3>세일 상품</h3>
-						<div class="sale">
-							<h2>유니폼</h2>
+		</section>
+		<section>
+			<article id="content2">
+				<!-- 세일 상품 -->
+				<div id="saleBox">
+					<ul id="icon">
+						<li><a href="#"><img class="country"
+								src="../image/salePage/price.png"></a></li>
+					</ul>
 
-							<div>
-								<img src="../image/salePage/sale1.PNG"></a>
-								<h3>유니폼</h3>
-								<button id="btn">구매</button>
+					<p id="dynamic" class="lg-text">Sale product</p>
+					<p class="sm-text">27일까지 깜짝 할인</p>
+					<div class="sale">
+						<h2 id="maintitle">LFC 패션 상품</h2>
 
-							</div>
-							<div>
-								<img src="../image/salePage/sale2.PNG"></a>
-								<h3>유니폼</h3>
-								<button id="btn">구매</button>
+						<br>
 
-							</div>
-							<div>
-								<img src="../image/salePage/sale3.PNG"></a>
-								<h3>유니폼</h3>
-								<button id="btn">구매</button>
-
-							</div>
+						<hr>
+						<div>
+							<img src="../image/salePage/sale1.PNG"></a>
+							<h3>LFC 남성용 회색 네온</h3>
+							<h3 id="won">￦35,000</h3>
+							<button id="btn">구매</button>
 
 						</div>
-						<div class="sale">
-						<br>
-							<h2>바지</h2>
-							<div>
-							
+						<div>
+							<img src="../image/salePage/sale2.PNG"></a>
+							<h3>LFC 줄무늬 셔츠</h3>
+							<h3 id="won">￦25,000</h3>
 
-								<img src="../image/salePage/salepants.PNG"></a>
-								<h3>바지</h3>
-								<button id="btn">구매</button>
-
-							</div>
-							<div>
-								<img src="../image/salePage/salepants2.PNG"></a>
-								<h3>바지</h3>
-								<button id="btn">구매</button>
-
-							</div>
-							<div>
-								<img src="../image/salePage/salepants3.PNG"></a>
-								<h3>바지</h3>
-								<button id="btn">구매</button>
-							</div>
-
-
+							<button id="btn">구매</button>
 
 						</div>
-						
-						<br>
-						<h2>악세사리</h2>
-						<div class="sale">
-							<div>
-								<a> <img src="../image/salePage/A1.PNG"></a>
-								<h3>악세사리</h3>
-								<button id="btn">구매</button>
-							</div>
-							<div>
-								<img src="../image/salePage/a2.PNG"></a>
-								<h3>악세사리</h3>
-								<button id="btn">구매</button>
-							</div>
-							<div>
-								<img src="../image/salePage/a3.PNG"></a>
-								<h3>악세사리</h3>
-								<button id="btn">구매</button>
-							</div>
+						<div>
+							<img src="../image/salePage/sale3.PNG"></a>
+							<h3>LFC 빨강 줄무늬 셔츠</h3>
+							<h3 id="won">￦25,000</h3>
 
+							<button id="btn">구매</button>
+
+						</div>
+
+					</div>
+					<div class="sale">
+						<br>
+						<h2 id="maintitle">여름 대비 반바지</h2>
+						<br>
+
+						<hr>
+						<div>
+
+
+							<img src="../image/salePage/salepants.PNG"></a>
+							<h3>LFC 줄무늬 반바지</h3>
+							<h3 id="won">￦12,000</h3>
+
+							<button id="btn">구매</button>
+
+						</div>
+						<div>
+							<img src="../image/salePage/salepants2.PNG"></a>
+							<h3>LFC 수영용 반바지</h3>
+							<h3 id="won">￦55,000</h3>
+
+							<button id="btn">구매</button>
+
+						</div>
+						<div>
+							<img src="../image/salePage/salepants3.PNG"></a>
+							<h3>LFC 검은색 회색 무늬 반바지</h3>
+							<h3 id="won">￦25,000</h3>
+
+							<button id="btn">구매</button>
+						</div>
+
+
+						<br>
+
+					</div>
+					<br> <br>
+					<h2 id="maintitle">악세사리</h2>
+					<br>
+
+					<hr>
+					<div class="sale">
+						<div>
+							<a> <img src="../image/salePage/A1.PNG"></a>
+							<h3>LFC 목걸이 카드 보관함</h3>
+							<h3 id="won">￦5,000</h3>
+
+							<button id="btn">구매</button>
+						</div>
+						<div>
+							<img src="../image/salePage/a2.PNG"></a>
+							<h3>LFC 어댑터</h3>
+							<h3 id="won">￦15,000</h3>
+
+							<button id="btn">구매</button>
+						</div>
+						<div>
+							<img src="../image/salePage/a3.PNG"></a>
+							<h3>LFC 해드셋</h3>
+							<h3 id="won">￦105,000</h3>
+
+							<button id="btn">구매</button>
+						</div>
+
+					</div>
+				</div>
+
+			</article>
+		</section>
+
+		<footer>
+			<div id="footerBox">
+				<div id="bottomMenuBox">
+					<ul id="bottomMenuItem">
+						<li><a href="#">회사소개</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#">개인정보 처리방침</a></li>
+						<li><a href="#">전자금융거래약관</a></li>
+						<li><a href="#">보안센터</a></li>
+						<li><a href="#">채용정보</a></li>
+					</ul>
+				</div>
+				<div id="companySponser">
+					<div id="cooperateCompany">
+						<div class="sponseredWrite">by</div>
+						<div class="sponserBy">
+							<a href="#"><img src="../image/UIIcon/samsungLogo.png"></a>
+						</div>
+						<div class="sponserBy">
+							<a href="#"><img src="../image/UIIcon/appleLogo.png"></a>
+						</div>
+						<div class="sponserBy">
+							<a href="#"><img src="../image/UIIcon/MLPLogo.png"></a>
 						</div>
 					</div>
-
-				</article>
-			</section>
-
-			<footer>
-            	<div id="footerBox">
-            	 <div id="bottomMenuBox">
-            	 	<ul id="bottomMenuItem">
-							<li><a href="#">회사소개</a></li>
-							<li><a href="#">이용약관</a></li>
-							<li><a href="#">개인정보 처리방침</a></li>
-							<li><a href="#">전자금융거래약관</a></li>
-							<li><a href="#">보안센터</a></li>
-							<li><a href="#">채용정보</a></li>
-						</ul>
-            	 </div>
-            	 	<div id="companySponser">
-	            	 	<div id="cooperateCompany">
-	            	 	<div class="sponseredWrite">by</div>
-	            	 		<div class="sponserBy">
-	            	 			<a href="#"><img src="../image/UIIcon/samsungLogo.png"></a>
-	            	 		</div>
-	            	 		<div class="sponserBy">
-	            	 			<a href="#"><img src="../image/UIIcon/appleLogo.png"></a>
-	            	 		</div>
-	            	 		<div class="sponserBy">
-	            	 			<a href="#"><img src="../image/UIIcon/MLPLogo.png"></a>
-	            	 		</div>
-	 					</div>
-	 					<div id="myCompany"><img src="../image/pageLogo/chukShinsa.png"></div>
-	 					<div id="collaboSNS">
-	 					<div class="sponseredWrite">with</div>
-	 						<div class="collaboBy">
-	 							<a href="#"><img src="../image/UIIcon/instargramLogo.png"></a>
-	 						</div>
-	 						<div class="collaboBy">
-	 							<a href="#"><img src="../image/UIIcon/youtubeLogo.png"></a>
-	 						</div>
-	 						<div class="collaboBy">
-	 							<a href="#"><img src="../image/UIIcon/facebookLogo.png"></a>
-	 						</div>
-	 					</div>
-            		</div>
-            		<div id="companyInfo"><img src="../image/pageLogo/copyright.png"></div>
-            	 </div>
-            </footer>
-      </div>
-    </body>
+					<div id="myCompany">
+						<img src="../image/pageLogo/chukShinsa.png">
+					</div>
+					<div id="collaboSNS">
+						<div class="sponseredWrite">with</div>
+						<div class="collaboBy">
+							<a href="#"><img src="../image/UIIcon/instargramLogo.png"></a>
+						</div>
+						<div class="collaboBy">
+							<a href="#"><img src="../image/UIIcon/youtubeLogo.png"></a>
+						</div>
+						<div class="collaboBy">
+							<a href="#"><img src="../image/UIIcon/facebookLogo.png"></a>
+						</div>
+					</div>
+				</div>
+				<div id="companyInfo">
+					<img src="../image/pageLogo/copyright.png">
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
 </html>
