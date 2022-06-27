@@ -29,5 +29,5 @@ setInterval(blink, 500);
 
 
 function resetTyping(){
-terget.textContent ="";
+target.textContent ="";
 }

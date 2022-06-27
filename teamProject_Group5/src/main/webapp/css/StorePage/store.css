@@ -48,3 +48,8 @@
 .clearfix{
     clear: both;
 }
+
+.product:hover {
+	opacity: 0.7;
+	border: solid 1px red;
+}
