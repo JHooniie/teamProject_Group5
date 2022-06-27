@@ -91,12 +91,9 @@
 
 #tabContent .itemTabContent { 
 	position:relative;
-	width:320px;
-
 	margin-bottom:20px;
 	box-sizing:border-box;
 }	
-
 
 .itemTabContent a img {
 	width:90%;
@@ -105,8 +102,6 @@
 
 #tabContent .saleTabContent { 
 	position:relative;
-	width:320px;
-	height:500px;
 	margin-bottom:20px;
 	box-sizing:border-box;
 }	

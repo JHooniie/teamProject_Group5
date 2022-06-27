@@ -3,178 +3,54 @@
 
 
 
+a{text-decoration:none;}
+button{cursor:pointer;}
 
 #loginWin {
 	position:relative;
+	height :550px;
 }
-
-
-#loginbox{
-	position:absolute;
-	top:75px;
-	border:0;
-	border-radius:15px 15px;
-	background-color:#f07f7f;
-}
-
-#loginWrap{
+.loginbox{
 	position:relative;
-	width:1280;
+	width:500px;
 	height :800px;
-	padding:0;
+	margin: 0 auto;
 }
-
-#loginbox{
-	position:absolute;
-	display:inline-block;
-	width:400px;
-	height:650px;
-	left:30px;
-	margin:0;
-}
-#loginbox h2{
+.loginbox h2{
 	width:100%;
 	height:100px;
 	line-height:100px;
-	text-align: center;
-	font-size: 50px;
+	text-align: center; font-size: 50px;
 	font-weight: normal;
-	color:white;
-}
-
-#logininput {
-	position:relative;
-	width:380px;
-	height:550px;
-	margin-top:30px;
-}
-
-.tagbox{
-	position:relative;
-	text-align:left;
-	left:10px;
-	bottom:10px;
-	}
-
-.tagbox span{
-	font-size:30px;
-	font-family:fantasy;
-	font-weight: bold;
 	
 }
-
-#caption{
-	position:relative;
-	width:355px;
-	height:40px;
-	line-height:40px;
-	text-align:left;
-	top:-5px;
-	margin-bottom:30px;
-}
-
-#loginid {
-	size:24px;
-	font-size:29.5px;
-	border:0;
-	border-radius:10px 10px;
-	top:15px;
-}
-
-#loginpw {
-	size:24px;
-	font-size:29.5px;
-	border:0;
-	border-radius:10px 10px;
-}
+.loginbox form{
+	width:100%;
+	height:550px; line-height:100px;
+	background-color : rgb(255, 255, 128);
+	padding: 60px; box-sizing: border-box;
+}	
 
 
+.loginbox fieldset{
+	border: none;
+	}	
+	
+	
+	.loginbox legend{
+	position : absolute; left:-999em;
 
-#findidpw {
-	position:relative;
-	display:block;
-	margin:40px 15px 15px;
-	text-align :right;
-}
+}	
 
-#findidpw a {
-	text-decoration:none;
-}
-
-#findidpw a:hover{
-	color:red;
-}
-
-#loginBtn {
+.loginbox label{
 	display: block;
-	width: 220px; height: 100px;
-	margin: 0 auto;
-	border : none;
-	border-radius:15px;
-	background-color: #ea4747;
-	color: #fff; 
-	font-size: 30px;
-	font-weight: bold;
+	font-size: 20px; color: #000000;
+	margin-bottom: 10px;
 }
-
-#loginBtn:hover{
-	color:#fbe9c5;
-	background-color: #e93333;
-}
-
-#adbanner {
-	position:absolute;
-	display:inline-block;
-	width:800px;
-	height:800px;
-	margin:0;
-	right:30px;
-	top:0;
-}
-#adlogo{
-	position:relative;
-	width:700px;
-	hight:200px;
-	line-height:200px;
-	top:78px;
-}
-
-#slideShowBox {
-	width:780px;
-	height:430px;
-	text-align:center;
-	overflow:hidden;
-}
-
-#prevpuaseNextButtonBox {
-	position:relative;
-	z-index:10;
-}
-
-#prevButton {position:absolute; top:380px; right:6.5%; opacity:0.8; cursor:pointer;}
-#nextButton {position:absolute; top:380px; right:0.5%; opacity:0.8; cursor:pointer;}
-
-#prevButton:hover {opacity:1;}
-#nextButton:hover {opacity:1;}
-
-#slidePanel {
-	position:relative;
-	width:6400px;
-	height:430px;
-	left:15px;
-}
-
-
-.slideShowimg {
-	float:left;
-	width:780px;
-	height:430px;
-}
-/* 
 .loginbox input{
 	display : block;
 	width: 100%; height: 50px;
-	margin-bottom:0;
+	margin-bottom:25px;
 	border: none; background-color: #ededed;
 	padding: 0 20px;
 	box-sizing : border-box;
@@ -190,7 +66,7 @@
 	display: inline-block;
 	height: 12px; line-height: 12px;
 }
- */
+
 /* .loginbox li: nth-child {
 border-left: 1px solid #333;
 padding-left: 10px;
@@ -200,7 +76,7 @@ margin-left:4px;
 color: #333; font-size: 12px;
 position: relative; top:  -2px;
 }  */
-/* .loginbox button{
+.loginbox button{
 	display: block;
 	width: 220px; height: 100px;
 	margin: 0 auto;
@@ -210,4 +86,3 @@ position: relative; top:  -2px;
 	font-size: 14px;
 	font-weight: bold;
 }
- */
