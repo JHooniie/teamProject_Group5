@@ -3,16 +3,14 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>ClubEQ Page</title> 
+		<title>프로젝트 예제 : index 메인 페이지</title> 
 		<link rel="stylesheet" type="text/css" href="../css/common.css">
 		<link rel="stylesheet" type="text/css" href="../css/index.css">
-		<link rel="stylesheet" type="text/css" href="../css/menu.css">
 		<link rel="stylesheet" type="text/css" href="../css/ClubPage/menu_uni.css" >
 		<link rel="stylesheet" type="text/css" href="../css/ClubPage/checkbox_uni.css" >
 		<link rel="stylesheet" type="text/css" href="../css/ClubPage/tabMenu_uni.css" >	
 		<script src="../js/jquery-3.6.0.min.js"></script>	
 		<script src="../js/ClubPage/topmenu_uni.js"></script>
-		<script src="../js/MainPage/headerMenu.js"></script>
 		<script src="../js/ClubPage/checkbox_uni.js"></script>
 		<script src="../js/ClubPage/searchBox_uni.js"></script>
 		<script type="text/javascript">
@@ -21,161 +19,104 @@
 	</head>
 	<body>
     	<div id="wrap">
-        <header>
-        		<div id="headerBox">
-	            	<div id="top-channel-links">
-					        <div class="top-ani">S</div>
-					        <div class="top-ani">t</div>
-					        <div class="top-ani">o</div>
-					        <div class="top-ani">r</div>
-					        <div class="top-ani">e</div>
-					</div>
-					<div id="topMenuBox">
+        	<header>
+		<div id="headerBox">
+			<div class="top-channel-links">
+				<ul class="list-select">
+					<li class="init"><a href="../index.html">Store</a></li>
+					<li class="hidden-list"><a href="#">Main</a></li>
+				</ul>
+			</div>
+			<div id="topMenuBox">
 						<ul id="top-list">
 							<li id="kor" ><a href="#" ><img class="country" src="../image/country/Korea.png"></a></li>								
-							<li><a href="#" ><img src="../image/UIIcon/myPage.png"></a></li>
-							<li><a href="#" ><img src="../image/UIIcon/shopping_list.png"></a></li>
+							<li><a href="#"><img src="../image/UIIcon/myPage.png"></a></li>
+							<li><a href="#"><img src="../image/UIIcon/shopping_list.png"></a></li>
 						</ul>
 					</div>
 				</div>
-				<div id="selectcon">
-				<ul>
-					<li><a href="#" ><img class="country" src="../image/country/UK.png"></a></li>
-					<li><a href="#" ><img class="country" src="../image/country/Italy.png"></a></li>
-					<li><a href="#" ><img class="country" src="../image/country/France.png"></a></li>
-				</ul>
-				</div>
             </header>
-            <nav>            
-            	<div id="uni-mainMenuBox">
-            	  <ul>
-            	 	
-            	 		<li><a href="#">구단별</a></li>
-            			<li><a href="#" id="showLliverpool">리버풀</a></li>
-						<li><a href="#" id="showManutd">맨체스터유나이티드</a></li>
-						<li><a href="#" id="showTottenham">토트넘</a></li>
-						<li><a href="#" id="showChelsea">첼시</a></li>
-						<li><a href="#" id="showMancity">멘체스터시티</a></li>
-						<li><a href="#" id="showAllMenu">그 외 구단 ▼</a></li>
-            	  </ul>
-            	</div>
-                 
+              
+            	<nav> 
+                <div id="nav">
+                <ul class="main">
                 
-                <div id="liverSub">
-				<div class="subMenuItem2" id="subMenu1">
-	            	<ul id="menuItem">
-						<li><a href="#">유니폼</a></li>
-						<li><a href="#">상의</a></li>
-						<li><a href="#">하의</a></li>
-						<li><a href="#">신발</a></li>
-						<li><a href="#">잡화</a></li>
-						<li><a href="#">아동</a></li>
-					</ul>
-				</div>
-				</div>
-				<div id="manutdSub">
-				<div class="subMenuItem2" id="subMenu2">
-	            	<ul id="menuItem">
-						<li><a href="#">유니폼</a></li>
-						<li><a href="#">상의</a></li>
-						<li><a href="#">하의</a></li>
-						<li><a href="#">신발</a></li>
-						<li><a href="#">잡화</a></li>
-						<li><a href="#">아동</a></li>
-					</ul>
-				
-				</div>
-				</div>
-				<div id="tottSub">
-				<div class="subMenuItem2" id="subMenu3">
-	            	<ul id="menuItem">
-						<li><a href="#">유니폼</a></li>
-						<li><a href="#">상의</a></li>
-						<li><a href="#">하의</a></li>
-						<li><a href="#">신발</a></li>
-						<li><a href="#">잡화</a></li>
-						<li><a href="#">아동</a></li>
-					</ul>
-				</div>
-				</div>
-				<div id="chelseaSub">
-				<div class="subMenuItem2" id="subMenu4">
-	            	<ul id="menuItem">
-						<li><a href="#">유니폼</a></li>
-						<li><a href="#">상의</a></li>
-						<li><a href="#">하의</a></li>
-						<li><a href="#">신발</a></li>
-						<li><a href="#">잡화</a></li>
-						<li><a href="#">아동</a></li>
-					</ul>
-				</div>
-				</div>
-				<div id="mancitySub">
-				<div class="subMenuItem2" id="subMenu5">
-	            	<ul id="menuItem">
-						<li><a href="#">유니폼</a></li>
-						<li><a href="#">상의</a></li>
-						<li><a href="#">하의</a></li>
-						<li><a href="#">신발</a></li>
-						<li><a href="#">잡화</a></li>
-						<li><a href="#">아동</a></li>
-					</ul>
-				</div>
-				</div>
-                
-                
-                
-                <div id="uni_subMenuBox">
-                <div class="uni-subMenuItem" id="subMenuItem1">
-					<ul>
-						<li><a href="#">아스날</a></li><br>
-						<li><a href="#">파리생제르망</a></li>
-
-					</ul>
-				</div>
-				<div class="uni_subMenuBox" id="subMenuItem2">
-					<ul>
-						<li><a href="#">바르셀로나</a></li><br>
-						<li><a href="#">유벤투스</a></li>
-
-					</ul>
-				</div>
-				<div class="uni_subMenuBox" id="subMenuItem3">
-					<ul>
-						<li><a href="#">아틀레티코마드리드</a></li><br>
-						<li><a href="#">인터말란</a></li>
-
-					</ul>
-				</div>
-				<div class="uni_subMenuBox" id="subMenuItem4">
-					<ul>
-						<li><a href="#">레알마드리드</a></li><br>
-						<li><a href="#">AC밀란</a></li>
-
-					</ul>
-				</div>
-				<div class="uni_subMenuBox" id="subMenuItem5">
-					<ul>
-						<li><a href="#">도르트문트</a></li><br>
+	              <li class="clubLi"><a id="liver" class="club" href="#">리버풀</a>
+		            	<ul class="sub">
+							<li><a href="#">유니폼</a></li>
+							<li><a href="#">상의</a></li>
+							<li><a href="#">하의</a></li>
+							<li><a href="#">신발</a></li>
+							<li><a href="#">잡화</a></li>
+							<li><a href="#">아동</a></li>
+						</ul>
+					</li>
 					
-
-					</ul>
-				</div>
-				<div class="uni_subMenuBox" id="subMenuItem6">
-					<ul>
-						<li><a href="#">바이에른뮌헨</a></li>
-					</ul>
-				</div>
-                
-                </div> 
-                
-                              
-            </nav>             
+					<li class="clubLi" ><a class="club" href="#">맨체스터유나이티드</a>
+		            	<ul class="sub">
+							<li><a href="#">유니폼</a></li>
+							<li><a href="#">상의</a></li>
+							<li><a href="#">하의</a></li>
+							<li><a href="#">신발</a></li>
+							<li><a href="#">잡화</a></li>
+							<li><a href="#">아동</a></li>
+						</ul>
+					</li>
+					
+					<li class="clubLi"><a class="club" href="#">토트넘</a>
+		            	<ul class="sub">
+							<li><a href="#">유니폼</a></li>
+							<li><a href="#">상의</a></li>
+							<li><a href="#">하의</a></li>
+							<li><a href="#">신발</a></li>
+							<li><a href="#">잡화</a></li>
+							<li><a href="#">아동</a></li>
+						</ul>
+					</li>
+					<li class="clubLi"><a class="club"  href="#">첼시</a>
+		            	<ul class="sub">
+							<li><a href="#">유니폼</a></li>
+							<li><a href="#">상의</a></li>
+							<li><a href="#">하의</a></li>
+							<li><a href="#">신발</a></li>
+							<li><a href="#">잡화</a></li>
+							<li><a href="#">아동</a></li>
+						</ul>
+					</li>
+					<li class="clubLi"><a class="club"  href="#">멘체스터시티</a>
+		            	<ul class="sub">
+							<li><a href="#">유니폼</a></li>
+							<li><a href="#">상의</a></li>
+							<li><a href="#">하의</a></li>
+							<li><a href="#">신발</a></li>
+							<li><a href="#">잡화</a></li>
+							<li><a href="#">아동</a></li>
+						</ul >
+					</li>
+								
+					<li class="clubLi"><a class="club" href="#">그 외 구단</a>
+		            	<ul id="others" class="sub">
+							<li><a href="#">아스날</a></li>
+							<li><a href="#">파리생제르망</a></li>
+							<li><a href="#">바르셀로나</a></li>
+							<li><a href="#">유벤투스</a></li>
+							<li><a href="#">아틀레티코마드리드</a></li>
+							<li><a href="#">인터말란</a></li>
+							<li><a href="#">레알마드리드</a></li>
+							<li><a href="#">AC밀란</a></li>
+							<li><a href="#">도르트문트</a></li>
+							<li><a href="#">바이에른뮌헨</a></li>
+						</ul>
+					</li>
+				</ul>
+               </div>
+               </nav>        
+                       
             <section>
         		<div class="searchBox" style="margin-left:300px;">
         			<input id="searchBox" type="text" value="검색어를 입력해주세요"></div>
         			<div class="searchBox" style="margin-left:5px;">
-               <a href="#" ><input id="searchBoxBtn" type="button" value="검색"></a>
+               <a href="#" ><input class="searchBoxBtn" type="button" value="검색"></a>
                 </div>
                 
             	<div  id="detailbox">   
@@ -216,7 +157,7 @@
 							
 							
                 </div> 
-                <div id="searchBtn">
+                <div  id="searchBtn" >
                <a href="#" ><input type="button" value="검색"></a>
                 </div>
                 
@@ -275,44 +216,7 @@
             </section>
             <footer>
             	<div id="footerBox">
-            	 <div id="bottomMenuBox">
-            	 	<ul id="bottomMenuItem">
-							<li><a href="#">회사소개</a></li>
-							<li><a href="#">이용약관</a></li>
-							<li><a href="#">개인정보 처리방침</a></li>
-							<li><a href="#">전자금융거래약관</a></li>
-							<li><a href="#">보안센터</a></li>
-							<li><a href="#">채용정보</a></li>
-						</ul>
-            	 </div>
-            	 	<div id="companySponser">
-	            	 	<div id="cooperateCompany">
-	            	 	<div class="sponseredWrite">by</div>
-	            	 		<div class="sponserBy">
-	            	 			<img src="image/UIIcon/samsungLogo.png">
-	            	 		</div>
-	            	 		<div class="sponserBy">
-	            	 			<img src="image/UIIcon/appleLogo.png">
-	            	 		</div>
-	            	 		<div class="sponserBy">
-	            	 			<img src="image/UIIcon/MLPLogo.png">
-	            	 		</div>
-	 					</div>
-	 					<div id="myCompany"><img src="image/pageLogo/chukShinsa.png"></div>
-	 					<div id="collaboSNS">
-	 					<div class="sponseredWrite">with</div>
-	 						<div class="collaboBy">
-	 							<img src="image/UIIcon/instargramLogo.png">
-	 						</div>
-	 						<div class="collaboBy">
-	 							<img src="image/UIIcon/youtubeLogo.png">
-	 						</div>
-	 						<div class="collaboBy">
-	 							<img src="image/UIIcon/facebookLogo.png">
-	 						</div>
-	 					</div>
-            		</div>
-            		<div id="companyInfo"><img src="image/pageLogo/copyright.png"></div>
+            	   <div id="companyInfo"><img id="moveToTop" src="../image/pageLogo/copyright.png"></div>
             	 </div>
             </footer>
       </div>

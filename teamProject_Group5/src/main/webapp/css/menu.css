@@ -206,6 +206,21 @@ ul {
 	visibility: hidden; /* 시작 시 SUB MENU 항목 숨김 */
 }
 
+#subMenuBox{
+	text-decoration:none;
+}
+
+#subMenuBox{
+	text-decoration:none;
+	text-align:left;
+}
+#subMenuBox a{
+	color:black;
+}
+#subMenuBox a:hover{
+	color:red;
+}
+
 .subMenuItem {
 	width: 12%;
 	display:inline-block;
@@ -243,6 +258,7 @@ ul {
 	left:864px;
 } 
 
+
 /*********** BOTTOM MENU *************/
 #footerBox {
 	position:relative;
@@ -251,7 +267,7 @@ ul {
 	height: 30px;
 	line-height: 30px;
 	position:relative;
-	border-bottom:solid 1px #999999;
+	border-bottom:solid 1px #ffffff;
 }
 
 #bottomMenuItem li {
@@ -334,14 +350,20 @@ ul {
 	padding:30x;
 	box-sizing:border-box;
 	left:0;
+	color:white;
+	font-size:65px;
+	line-height:200px;
 }
 
-#myCompany img{
+
+
+/* #myCompany img{
 	position:relative;
 	height:150px;
 	line-height:150px;
+	z-index:20;
 	top:20px;
-}
+} */
 
 #collaboSNS {
 	position:relative;
@@ -384,7 +406,7 @@ ul {
 	position:relative;
 	width:1280px;
 	box-sizing:border-box;
-	border-top:solid 1px #999999;
+	border-top:solid 1px #ffffff;
 }
 
 #companyInfo img {

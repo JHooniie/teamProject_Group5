@@ -42,6 +42,7 @@
 			movedIndex = movedIndex -1;	// 왼쪽으로 한 칸 이동
 			
 			moveSlide(movedIndex);	// 실제 이동하는 함수 호출 (인덱스값 전달)
+			$('#slidePanel').clearQueue();
 	});
 	
 		// next 버튼 클릭하면 앞으로 이동
@@ -51,11 +52,21 @@
 			movedIndex = movedIndex +1;	// 오른쪽으로 한 칸 이동
 			
 			moveSlide(movedIndex);	// 실제 이동하는 함수 호출 (인덱스값 전달)
+			$('#slidePanel').clearQueue();
 	});
 	
 	
-	});
 	
+setInterval(fnSlide, 4000);
+function fnSlide() {
+  $('#slidePanel').animate({ 'left': -1280 }, 2000, function () {
+    $('#slidePanel').css({ 'left':-1});
+    $("#slidePanel img:first-child").insertAfter("#slidePanel img:last-child");
+  });
+};
+	
+
+});
 /*	setTimeout(function(){
 					// 애니메이션 큐 제거
 					$('div').clearQueue();

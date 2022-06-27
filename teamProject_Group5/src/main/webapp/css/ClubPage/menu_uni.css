@@ -1,160 +1,148 @@
-@charset "UTF-8";
+@charset "EUC-KR";
 
 /* menu.css */
 
-
-
-/********** UNI - MAIN MENU ************/
-#uni-mainMenuBox {
-	width: 1280px;
-	height: 70px;
-	line-height: 70px;
-	background-color: #ffffff; /* white*/
-	z-index: 20; /* �ㅽ�щ· �� �� �ㅻ��濡� */
-	border-top: solid #cccccc 1px;
-	border-bottom: solid #cccccc 1px;
+/* ��� <ul> �±׿� ���� */
+ul {
+	margin-top: 0;
+	padding: 0;
+	list-style: none; /* type ���� */
 }
 
-#uni-mainMenuBox ul {
+/********** TOP MENU ************/
+
+#topMenuBox {
+	float: right;
+	width: 10%;
+	padding-right: 10px;
+}
+
+#topMenuBox ul {
 	margin: 0;
 }
 
-#uni-mainMenuBox li {
+#topMenuBox li {
 	float: left;
 	text-align: center;
-	width: 13%;
-	height: 60px;
+	width: 33%;
+	height: 30px;
 	line-height: 60px;
-	font-size: lager;
 }
 
-#uni-mainMenuBox ul li a {
-	text-decoration: none;
-	color: black;
-	font-size: 14px; /* pt �� �� */
+#topMenuBox ul li a img {
+	width: 100%;
+	height: 30px;
+}
+
+/********** CLUB MENU ************/
+
+
+.club{
 	font-weight: bold;
+	font-size:18px;
 }
 
-#uni-mainMenuBox ul li a:hover { /* 媛� 硫��� ��紐⑹�� 留��곗�� �щ�몄�� �� */
-	color: red; /* 湲����� 鍮④� */
+
+
+a { 
+	text-decoration: none; 
+	color: #404040;
+	font-weight:normal;
+ }
+ 
+li { list-style: none; }
+
+/*BODY*/
+#nav {
+    width: 100%;
+    height:60px;
+    border-bottom:solid 1px #cccccc;
+    
+}
+
+/*
+#nav:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+*/
+
+.main>li {
+    position: relative;
+    float: left;
+    width: 190px;
+    box-sizing: border-box;
+    line-height: 30px;
+    text-align: center;
+    
+}
+
+
+.main>li a {
+    display: block;
+    transition: all 0.3s;
+    height:40px;
+}
+
+
+
+.main>li a:hover {
+    background: #ff8080;
+    color: #fff;
+}
+
+.clubLi>.club {
+	height:60px !important;
+	line-height: 60px;
+}
+
+
+.sub {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background: #eee;
+    opacity: 0.9;
+}
+
+#others>li a{
+	font-weight:bold ;
+}
+
+
+#liver{
+	 background: #dc0714;
+	 color: #fff !important;
 }
 
 /********** SUB MENU ************/
-#liverSub {
-	margin-left: 10%;
-	width: 11%;
-	height: 215px;
-	background-color: #ffffff; /* white*/
-	text-align: center;
-	z-index: 10; /* �щ�쇱�대�� �� 諛��� ��濡� ��濡��ㅼ�� ����濡� */
-	padding-bottom: 0;
-	position: absolute;
-	visibility: hidden; /* ���� �� SUB MENU ��紐� �④� */
-	border: solid 1px black;
-	margin-left: 13%;
-}
 
-#manutdSub {
-	margin-left: 10%;
-	width: 11%;
-	height: 215px;
-	background-color: #ffffff; /* white*/
-	text-align: center;
-	z-index: 10; /* �щ�쇱�대�� �� 諛��� ��濡� ��濡��ㅼ�� ����濡� */
-	padding-bottom: 0;
-	position: absolute;
-	visibility: hidden; /* ���� �� SUB MENU ��紐� �④� */
-	border: solid 1px black;
-	margin-left: 26%
-}
 
-#tottSub {
-	margin-left: 10%;
-	width: 11%;
-	height: 215px;
-	background-color: #ffffff; /* white*/
-	text-align: center;
-	z-index: 10; /* �щ�쇱�대�� �� 諛��� ��濡� ��濡��ㅼ�� ����濡� */
-	padding-bottom: 0;
-	position: absolute;
-	visibility: hidden; /* ���� �� SUB MENU ��紐� �④� */
-	border: solid 1px black;
-	margin-left: 39%
-}
-
-#chelseaSub {
-	margin-left: 10%;
-	width: 11%;
-	height: 215px;
-	background-color: #ffffff; /* white*/
-	text-align: center;
-	z-index: 10; /* �щ�쇱�대�� �� 諛��� ��濡� ��濡��ㅼ�� ����濡� */
-	padding-bottom: 0;
-	position: absolute;
-	visibility: hidden; /* ���� �� SUB MENU ��紐� �④� */
-	border: solid 1px black;
-	margin-left: 52%
-}
-
-#mancitySub {
-	margin-left: 10%;
-	width: 11%;
-	height: 215px;
-	background-color: #ffffff; /* white*/
-	text-align: center;
-	z-index: 10; /* �щ�쇱�대�� �� 諛��� ��濡� ��濡��ㅼ�� ����濡� */
-	padding-bottom: 0;
-	position: absolute;
-	visibility: hidden; /* ���� �� SUB MENU ��紐� �④� */
-	border: solid 1px black;
-	margin-left: 65%
-}
-
-#uni_subMenuBox {
+#subMenuBox {
 	margin-left: 10%;
 	width: 1100px;
 	height: 140px;
 	background-color: #ffffff; /* white*/
 	text-align: center;
-	z-index: 10; /* �щ�쇱�대�� �� 諛��� ��濡� ��濡��ㅼ�� ����濡� */
+	z-index: 10; /* �����̵� �� �ڽ� ���� ��Ӵٿ� �ϵ��� */
 	padding-bottom: 0;
 	position: absolute;
-	visibility: hidden; /* ���� �� SUB MENU ��紐� �④� */
+	visibility: hidden; /* ���� �� SUB MENU �׸� ���� */
 	border: solid 1px black;
 }
-/* 클래스로 설정되어 있는데 본문 확인해보니 id 명입니다. 아마 이 부분은 실행이 안되었을 것 같은데 
-	확인해보시고 삭제하시거나 활용하시면 될 것 같습니다! 사용안되고 있는 클래스 영역 밑에 줄에 주석줄
-	표시하겠습니다.
-*/
 
-.subMenuItem2 ul {
-	background-color: #ffffff;
-}
 
-.subMenuItem2 ul li {
-	height: 35px;
-	line-height: 35px;
-}
-
-.subMenuItem2 ul li a {
-	display: inline-block;
-	color: #333333;
-	text-decoration: none;;
-}
-
-.subMenuItem2 ul li a:hover {
-	background-color: #ffffff;
-	text-decoration: underline;
-	color: black;
-}
-/* **************************사용되지 않고 있는 클래스 참조**************************** */
-.uni-subMenuItem {
+.subMenuItem {
 	width: 15%;
 	background-color: #ffffff;
 	margin-top: 10px;
 }
 
-/* 媛� ��釉�硫��� ��紐� ��移� 吏��� */
+/* �� ����޴� �׸� ��ġ ���� */
 #subMenuItem1 {
 	position: absolute;
 	margin-left: 5%;
@@ -185,22 +173,22 @@
 	margin-left: 80%;
 }
 
-.uni-subMenuItem ul {
+.subMenuItem ul {
 	background-color: #ffffff;
 }
 
-.uni-subMenuItem ul li {
+.subMenuItem ul li {
 	height: 35px;
 	line-height: 35px;
 }
 
-.uni-subMenuItem ul li a {
+.subMenuItem ul li a {
 	display: inline-block;
 	color: #333333;
 	text-decoration: none;;
 }
 
-.uni-subMenuItem ul li a:hover {
+.subMenuItem ul li a:hover {
 	background-color: #ffffff;
 	text-decoration: underline;
 	color: black;
@@ -220,14 +208,37 @@
 	font-size: 12pt;
 }
 
-#searchBoxBtn {
-	height: 45px;
-	width: 60;
-	background-color: white;
-	font-family: 怨���;
-	border: '1';
+.searchBoxBtn {
+	height: 46px;
+	width: 60px;
+	background-color: #ff8080;
+	font-family: ����;
+	border: 0;
+	font-size:16px;
+	color:white;
 }
 
-#searchBoxBtn:hover {
+.searchBoxBtn:hover {
 	cursor: pointer;
+
+}
+
+/*********** BOTTOM MENU *************/
+#bottomMenuBox {
+	margin-top: 10%;
+	height: 30px;
+	line-height: 30px;
+	position: static;
+}
+
+#bottomMenuItem li {
+	display: inline-block;
+	text-align: center;
+	padding: 5px;
+}
+
+#bottomMenuItem li a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
 }
