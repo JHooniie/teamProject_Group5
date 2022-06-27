@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/* moveToTop.css */
+
+#toTop{
+	position:relative;
+}
+
+#moveToTop{
+	position:fixed;
+	width:40px;
+	height:80px;
+	z-index:30;
+	background-color:black;
+	color:white;
+	opacity:0.8;
+	box-shadow:0 3px 5px 0px gray;
+}
